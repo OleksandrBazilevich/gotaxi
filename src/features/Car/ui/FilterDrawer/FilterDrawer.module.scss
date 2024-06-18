@@ -1,0 +1,41 @@
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 8px;
+  padding: 0;
+  width: 88px;
+  height: 41px;
+}
+
+.icon {
+  width: 16px;
+  margin-right: 1.5px;
+  fill: var(--black);
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+  border-bottom: 1px solid var(--light);
+
+  h3 {
+    font: var(--font-20-typography);
+  }
+}
+
+.accordeonItem {
+  background: var(--white) !important;
+  border-bottom: 1px solid var(--light) !important;
+  border-radius: 0 !important;
+  padding-right: 0px !important;
+  padding-left: 0px !important;
+}
+
+@media screen and (max-width: 375px) {
+  .btn {
+    width: 50%;
+  }
+}

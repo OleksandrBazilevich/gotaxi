@@ -1,0 +1,66 @@
+.header {
+  margin-top: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.viewLicense {
+  width: 170px;
+  height: 40px;
+  padding: 12px 14px;
+}
+
+.action {
+  width: 34px;
+  height: 34px;
+  border-radius: 4px;
+  padding: 0;
+  margin-left: 12px;
+  svg {
+    width: 18px;
+    height: 18px;
+  }
+}
+
+.stats {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.statsItem {
+  margin-right: 50px;
+  margin-top: 36px;
+  p {
+    font: var(--font-p-typography);
+
+    color: var(--gray);
+    margin-bottom: 12px;
+  }
+
+  h5 {
+    font: var(--font-20-typography);
+
+    text-align: left;
+  }
+}
+
+.aboutMe {
+  margin: 32px 0;
+}
+
+.title {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 25.2px;
+  letter-spacing: -0.02em;
+  margin-bottom: 12px;
+}
+
+.description {
+  font: var(--font-p-typography);
+
+  color: var(--gray);
+}

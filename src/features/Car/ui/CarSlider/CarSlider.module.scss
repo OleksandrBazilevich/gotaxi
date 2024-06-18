@@ -1,0 +1,27 @@
+.title {
+  font: var(--font-20-typography);
+
+  margin-bottom: 17px;
+}
+
+.valueLabel {
+  position: absolute;
+  top: calc(100% - 15px);
+  transform: translateX(-50%);
+  font: var(--font-p-typography);
+}
+
+.container {
+  position: relative;
+  width: 100%;
+}
+
+.values {
+  font: var(--font-p-typography);
+
+  color: var(--gray);
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 13px;
+}

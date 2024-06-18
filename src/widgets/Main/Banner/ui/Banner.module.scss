@@ -1,0 +1,154 @@
+.banner {
+  margin-top: 47px;
+  margin: 47px 300px 0 300px;
+  height: 470px;
+  background: var(--primary);
+  border-radius: 40px;
+  padding: 82px 70px;
+  position: relative;
+}
+
+.img {
+  position: absolute;
+  top: -10px;
+  max-width: 90%;
+  height: auto;
+  right: -200px;
+}
+
+.contactUsImg {
+  position: absolute;
+  top: -10px;
+  max-width: 90%;
+  height: auto;
+  left: -80px;
+}
+
+.contactUsContent {
+  position: absolute;
+  right: 0;
+  width: 50%;
+}
+
+.title {
+  font: var(--font-h1-typography);
+  margin-bottom: 16px;
+}
+
+.text {
+  color: var(--gray);
+  font: var(--font-subheading-typography);
+}
+
+.wrapper {
+  margin-top: 58px;
+  display: flex;
+}
+.img3 {
+  display: none;
+}
+
+.container {
+  max-width: 50%;
+  overflow-x: hidden;
+}
+
+.contentContainer {
+  max-width: 519px;
+  margin-bottom: 100px;
+}
+
+.container2 {
+  max-width: 100%;
+}
+
+.btn {
+  margin-right: 16px;
+  width: 170px;
+  height: 50px;
+}
+
+.img2 {
+  display: none;
+}
+@media screen and (max-width: 1440px) {
+  .banner {
+    margin: 47px 50px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .banner {
+    height: 600px;
+    left: 0;
+    border-radius: 0;
+    margin: 47px 0;
+  }
+
+  .contentContainer {
+    max-width: unset;
+  }
+
+  .img {
+    display: none;
+  }
+
+  .img2 {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  .content {
+    text-align: center;
+    width: 100%;
+  }
+
+  .wrapper {
+    justify-content: center;
+    margin-top: 58px;
+    display: flex;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .header {
+    height: 40px;
+  }
+  .banner {
+    padding: 41px 21px;
+    height: 792px;
+    left: 0;
+    border-radius: 0;
+  }
+
+  .img2 {
+    display: none;
+  }
+
+  .img3 {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  .wrapper {
+    justify-content: center;
+    margin-top: 58px;
+    flex-direction: column;
+    display: flex;
+  }
+
+  .btn {
+    margin-bottom: 16px;
+    width: 100%;
+  }
+
+  .title {
+    font-size: 48px;
+  }
+
+  .content {
+    text-align: start;
+  }
+}

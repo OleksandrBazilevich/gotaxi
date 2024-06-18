@@ -1,0 +1,76 @@
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 50px 16px 0px;
+  height: 100%;
+  backdrop-filter: blur(10px);
+  background: rgba(0, 0, 0, 0.15);
+  z-index: var(--drawler-overlay-z-index);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow-y: auto;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+  transition:
+    opacity 0.3s ease,
+    visibility 0.3s ease;
+  opacity: 0;
+  visibility: hidden;
+
+  &.open {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  @media screen and (max-width: 375px) {
+    &.open {
+      align-items: start;
+    }
+  }
+}
+
+.content {
+  position: relative;
+  background: white;
+  padding: 32px 30px;
+  border-radius: 12px;
+  min-width: 300px;
+
+  opacity: 0;
+  transform: translateY(-20px);
+  transition:
+    opacity 0.3s ease,
+    transform 0.3s ease;
+
+  .overlay.open & {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 34px;
+  height: 34px;
+  cursor: pointer;
+
+  // Анімація відкриття та закриття
+  opacity: 0;
+  transform: translateY(-20px);
+  transition:
+    opacity 0.3s ease,
+    transform 0.3s ease;
+
+  .overlay.open & {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

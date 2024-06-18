@@ -1,0 +1,252 @@
+.carReservation {
+  margin-top: 24px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.details {
+  width: 50%;
+  margin-right: 24px;
+}
+
+.carInfo {
+  display: flex;
+  background: var(--ultra-light);
+  padding: 12px;
+  border-radius: 12px;
+  align-items: center;
+}
+
+.img {
+  border-radius: 6px;
+  margin-right: 24px;
+  max-width: 190px;
+  aspect-ratio: 1.6;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.rent {
+  margin-top: 28px;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 25.2px;
+  letter-spacing: -0.02em;
+  color: var(--ultra-dark);
+}
+
+.reservationDetails {
+  margin: 36px 0px;
+}
+
+.title {
+  font: var(--font-p-15-typography);
+
+  margin-bottom: 16px;
+  color: var(--ultra-dark);
+}
+
+.finalDetails {
+  background: var(--ultra-light);
+  border-radius: 12px;
+  padding: 18px 16px;
+  margin-bottom: 24px;
+}
+
+.detailsItem {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.name,
+.value {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 25.2px;
+  letter-spacing: -0.02em;
+}
+
+.name {
+  color: var(--gray);
+}
+
+.value {
+  color: var(--ultra-dark);
+}
+
+.calendarStats {
+  display: flex;
+  align-items: center;
+}
+
+.calendarContainer {
+  border: 1px solid var(--light);
+  padding: 24px;
+  border-radius: 12px;
+}
+
+.calendarStatItem {
+  margin-right: 24px;
+  max-width: 20%;
+  margin-top: 24px;
+  margin-bottom: 50px;
+
+  h4 {
+    font: var(--font-h4-typography);
+    color: var(--ultra-dark);
+    margin-bottom: 6px;
+  }
+
+  span {
+    font: var(--font-p-typography);
+
+    color: var(--gray);
+  }
+}
+
+.calendarWrapper {
+  display: flex;
+}
+
+.tabs {
+  margin-right: 24px;
+}
+
+.btn {
+  width: 164px;
+  height: 43px;
+  margin-bottom: 16px;
+
+  &:hover {
+    border-color: var(--ultra-dark);
+  }
+}
+
+.modal {
+  position: fixed;
+
+  width: 100%;
+  height: 110%;
+  z-index: 10;
+  left: 0;
+  top: 0;
+  backdrop-filter: blur(10px);
+  background: rgba(255, 255, 255, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: none;
+
+  &.showModal {
+    display: flex;
+  }
+}
+
+.modalContent {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 476px;
+}
+
+.modalTitle {
+  font: var(--font-h3-typography);
+
+  margin-bottom: 16px;
+}
+
+.modalDescription {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 25.2px;
+  letter-spacing: -0.02em;
+  color: var(--gray);
+  margin-bottom: 24px;
+}
+.modalButton {
+  width: 266px;
+}
+
+@media screen and (max-width: 1024px) {
+  .img {
+    height: 100px;
+  }
+  .calendarWrapper {
+    flex-direction: column;
+  }
+  .tabs {
+    margin-bottom: 26px;
+    margin-right: 0px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .rent {
+    margin-top: 8px;
+  }
+
+  .name {
+    font: var(--font-20-typography);
+  }
+
+  .btn {
+    width: 33%;
+    margin-right: 8px;
+    margin-bottom: 0px;
+  }
+
+  .calendarStats {
+    flex-wrap: wrap;
+    align-items: start;
+    justify-content: space-between;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .img {
+    max-width: unset;
+    width: 100%;
+    aspect-ratio: 1.6;
+    height: auto;
+    margin-right: 0;
+    margin-bottom: 8px;
+  }
+
+  .modalContent {
+    max-width: 334px;
+  }
+  .modalTitle {
+    font-size: 32px;
+  }
+
+  .details {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 24px;
+  }
+  .carInfo {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+  }
+
+  .calendarContainer {
+    margin-bottom: 20px;
+  }
+  .carReservation {
+    flex-direction: column-reverse;
+  }
+  .calendarStatItem {
+    width: 40%;
+    max-width: unset;
+  }
+}

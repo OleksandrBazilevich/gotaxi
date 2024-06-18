@@ -1,0 +1,23 @@
+.container {
+  width: 100%;
+  display: flex;
+  margin-bottom: 62px;
+  align-items: center;
+  overflow-x: auto;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+.card {
+  min-width: 424px;
+  margin-right: 24px;
+}
+
+@media screen and (max-width: 375px) {
+  .card {
+    max-width: 297px;
+  }
+}

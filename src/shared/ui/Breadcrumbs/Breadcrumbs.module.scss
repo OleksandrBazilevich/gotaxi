@@ -1,0 +1,30 @@
+.breadcrumbs {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.breadcrumbItem {
+  display: flex;
+  align-items: center;
+  font: var(--font-caption-12-typography);
+
+  svg {
+    margin-top: -4px;
+    margin-right: 8px;
+  }
+
+  a {
+    text-decoration: none;
+    color: var(--gray);
+  }
+}
+
+.caretIcon {
+  margin: -5px 8px 0px;
+}
+
+@media screen and (max-width: 375px) {
+  .breadcrumbs {
+    display: none;
+  }
+}

@@ -1,0 +1,169 @@
+.wrapper {
+  padding: 40px 300px 0px;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+.text {
+  margin-right: 16px;
+}
+
+.title {
+  font: var(--font-h1-typography);
+  color: var(--ultra-dark);
+  margin-bottom: 25px;
+}
+
+.description {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 28.8px;
+  letter-spacing: -0.02em;
+  color: var(--gray);
+  margin-bottom: 25px;
+}
+
+.img {
+  width: 50%;
+}
+
+.btn {
+  width: 223px;
+  height: 50px;
+}
+
+.steps {
+  padding: 0px 20px;
+  max-width: 900px;
+  border-left: 1px solid var(--black);
+  position: relative;
+  margin-top: 200px;
+  margin-bottom: 220px;
+}
+
+.step {
+  display: flex;
+  align-items: start;
+  position: relative;
+  margin-bottom: 80px;
+
+  padding-left: 40px;
+
+  &:before {
+    content: "";
+    position: absolute;
+    left: -25.55px;
+    top: 12px;
+    box-shadow: 0px 0px 0px 6px rgba(0, 0, 0, 0.3);
+    border-radius: 100%;
+    width: 10px;
+    height: 10px;
+    background-color: #000;
+  }
+
+  &:first-of-type:before {
+    top: 0px;
+  }
+  &:last-of-type:before {
+    top: unset;
+    bottom: 0px;
+  }
+}
+
+.dot {
+  position: absolute;
+  left: 11px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #000;
+}
+
+.stepContent {
+  h2 {
+    font: var(--font-h4-typography);
+    color: var(--ultra-dark);
+    margin-bottom: 20px;
+  }
+
+  p {
+    margin: 5px 0;
+    font: var(--font-p-15-typography);
+
+    color: var(--gray);
+  }
+
+  ul {
+    font: var(--font-p-15-typography);
+
+    color: var(--gray);
+    margin: 10px 0 0 30px;
+    padding: 0;
+    list-style-type: disc;
+
+    li {
+      margin-bottom: 5px;
+    }
+  }
+}
+
+.stepsButton {
+  position: relative;
+  bottom: -20px;
+}
+
+@media screen and (max-width: 1440px) {
+  .wrapper {
+    padding: 40px 60px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .title {
+    font-size: 48px;
+    line-height: 52.8px;
+  }
+  .wrapper {
+    padding: 40px 50px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .wrapper {
+    padding: 40px 16px;
+  }
+
+  .title {
+    font: var(--font-h3-typography);
+  }
+
+  .container {
+    flex-direction: column;
+    .img {
+      width: 100%;
+      margin-top: 50px;
+    }
+  }
+  .steps {
+    margin: 140px 0;
+    padding: 0;
+    border-left: none;
+  }
+
+  .step {
+    margin-bottom: 30px;
+    padding: 0;
+    &:before {
+      content: none;
+    }
+  }
+
+  .btn {
+    width: 100%;
+  }
+}

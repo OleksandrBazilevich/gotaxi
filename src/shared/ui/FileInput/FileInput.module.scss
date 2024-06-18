@@ -1,0 +1,23 @@
+.upload {
+  input[type="file"] {
+    display: none;
+  }
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+  color: var(--ultra-dark);
+  margin-bottom: 32px;
+  border-radius: 8px;
+  height: 154px;
+  width: 100%;
+  background: var(--white);
+  border: 1px solid var(--light);
+  cursor: pointer;
+}
+
+.icon {
+  display: block;
+  margin-bottom: 15px;
+}

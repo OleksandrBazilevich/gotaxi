@@ -1,0 +1,112 @@
+.addNew {
+  width: 135px;
+  height: 40px;
+  svg {
+    width: 16px;
+    height: 16px;
+    margin-right: 6px;
+  }
+}
+
+.title {
+  font: var(--font-h4-typography);
+  letter-spacing: -0.02em;
+  margin-bottom: 19px;
+}
+
+.description {
+  width: 50%;
+  font: var(--font-p-typography);
+
+  color: var(--gray);
+  margin-bottom: 36px;
+}
+
+.container {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  margin-top: 16px;
+}
+
+.contentWrapper {
+  position: relative;
+}
+
+.subtitle {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 19.8px;
+  letter-spacing: -0.02em;
+  color: var(--ultra-dark);
+  margin-bottom: 32px;
+}
+
+.wrapper {
+  margin-bottom: 36px;
+}
+
+.fileInput {
+  width: 24%;
+}
+
+.selectContainer {
+  width: 32%;
+  display: flex;
+  flex-direction: column;
+}
+
+.selectDescription {
+  font: var(--font-caption-12-typography);
+
+  color: var(--gray);
+  margin-top: 8px;
+  margin-bottom: 10px;
+}
+
+.btn {
+  font: var(--font-p-15-typography);
+
+  text-align: left;
+  width: 320px;
+  height: 50px;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 1024px) {
+  .description {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .btn {
+    width: 100%;
+  }
+
+  .selectItem {
+    width: 100% !important;
+    margin-bottom: 12px;
+  }
+
+  .container {
+    flex-direction: column;
+    margin-top: 0;
+  }
+
+  .fileInput {
+    width: 100%;
+  }
+
+  .selectDescription {
+    display: none;
+  }
+
+  .selectContainer {
+    width: 100%;
+  }
+
+  .addNew {
+    width: 100%;
+  }
+}

@@ -1,0 +1,27 @@
+.filter {
+  height: 40px;
+  width: 96px;
+  padding: 9px 16px;
+
+  svg {
+    margin-right: 8px;
+  }
+}
+
+.title {
+  font: var(--font-p-15-typography);
+  color: var(--ultra-dark);
+}
+
+.checkbox {
+  margin: 12px 0px;
+}
+
+.subtitle {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 13.3px;
+  letter-spacing: -0.02em;
+  color: var(--gray);
+  margin: 20px 0px 10px;
+}

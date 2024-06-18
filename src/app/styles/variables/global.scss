@@ -1,0 +1,55 @@
+:root {
+  --font-family-main: "Gilroy-Regular", sans-serif;
+
+  --font-h1-typography: 800 60px/66px "Gilroy-ExtraBold";
+  --font-h2-typography: 800 60px/66px "Gilroy-ExtraBold";
+  --font-h3-typography: 800 40px/44px "Gilroy-ExtraBold";
+  --font-h4-typography: 800 28px/30px "Gilroy-ExtraBold";
+  --font-subheading-typography: 600 18px/25px "Gilroy-SemiBold";
+  --font-p-typography: 600 16px/15px "Gilroy-SemiBold";
+  --font-p-15-typography: 600 15px/14px "Gilroy-SemiBold";
+  --font-caption-12-typography: 600 12px/14px "Gilroy-SemiBold";
+  --font-20-typography: 600 20px/19px "Gilroy-SemiBold";
+  --font-22-typography: 600 22px/20px "Gilroy-SemiBold";
+
+  --letter-spacing: -2%;
+
+  --white: #ffffff;
+  --ultra-light: #f5f5f5;
+  --light: #d7d7d7;
+  --gray: #00000078;
+  --dark-gray: #000000b2;
+  --medium-dark: #3d3d3d;
+  --ultra-dark: #282828;
+  --black: #141414;
+  --primary: #ffd900;
+  --positive: #35aa47;
+  --warning: #dd8534;
+
+  --auth-background-z-index: -1;
+  --drawler-overlay-z-index: 999;
+
+  .rdp {
+    --rdp-cell-size: 65px;
+    --rdp-caption-font-size: 18px;
+    --rdp-accent-color: var(--primary);
+    --rdp-background-color: none;
+    --rdp-accent-color-dark: #3003e1;
+    --rdp-background-color-dark: #180270;
+    --rdp-outline: 2px solid var(--rdp-accent-color);
+    --rdp-outline-selected: 3px solid var(--rdp-accent-color);
+    --rdp-selected-color: var(--ultra-dark);
+  }
+
+  @media screen and (max-width: 1024px) {
+    .rdp {
+      --rdp-cell-size: 50px;
+    }
+  }
+
+  @media screen and (max-width: 375px) {
+    .rdp {
+      --rdp-cell-size: 36px;
+    }
+  }
+}

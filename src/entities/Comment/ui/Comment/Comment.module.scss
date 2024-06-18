@@ -1,0 +1,19 @@
+.accordeonItem {
+  padding: 24px;
+  width: 100%;
+  border-radius: 16px;
+  background: var(--ultra-light);
+  margin-bottom: 16px;
+}
+
+.description {
+  display: none;
+  font: var(--font-p-typography);
+  line-height: 27.2px;
+  color: var(--ultra-dark);
+  padding: 24px 0px;
+
+  &.show {
+    display: block;
+  }
+}

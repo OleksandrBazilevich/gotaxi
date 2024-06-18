@@ -1,0 +1,57 @@
+.Field {
+  padding: 16px;
+  position: relative;
+  border-radius: 8px;
+  border: 1px solid var(--light);
+  background: var(--white);
+  margin-bottom: 16px;
+
+  input {
+    width: 100%;
+    border: none;
+    background: inherit;
+    font-weight: 600;
+    color: var(--gray);
+
+    -moz-appearance: textfield;
+    &::-webkit-outer-spin-button,
+    &::-webkit-inner-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+    }
+  }
+
+  input::placeholder {
+    font-weight: 600;
+    color: var(--gray);
+  }
+
+  input:focus {
+    outline: none;
+  }
+
+  .icon {
+    width: 26px;
+    height: 26px;
+    position: absolute;
+    fill: var(--gray);
+    top: 50%;
+    transform: translate(0, -50%);
+  }
+
+  .start {
+    left: 15px;
+  }
+
+  .end {
+    right: 15px;
+  }
+}
+
+.error {
+  border: 1px solid var(--error-color);
+
+  .icon {
+    fill: var(--error-color);
+  }
+}

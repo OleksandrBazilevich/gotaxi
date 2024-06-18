@@ -1,0 +1,21 @@
+.wrapper {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+
+  &:hover {
+    .title {
+      color: var(--gray);
+    }
+  }
+}
+
+.container {
+  margin-left: 13px;
+}
+
+.title {
+  font: var(--font-p-typography);
+
+  color: var(--ultra-dark);
+}

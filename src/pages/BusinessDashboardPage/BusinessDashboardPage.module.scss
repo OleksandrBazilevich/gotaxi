@@ -1,0 +1,27 @@
+.title {
+  font: var(--font-h3-typography);
+
+  margin: 30px 0px;
+}
+
+.cardContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  overflow-x: auto;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .title {
+    font-size: 36px;
+    line-height: 39.6px;
+  }
+  .cardContainer {
+    flex-direction: column;
+  }
+}

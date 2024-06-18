@@ -1,0 +1,44 @@
+.faq {
+  max-width: 867px;
+  margin: 0 auto 150px auto;
+}
+
+.header {
+  text-align: center;
+  margin: 156px auto 56px auto;
+  max-width: 550px;
+  h2 {
+    font: var(--font-h1-typography);
+  }
+  p {
+    font-weight: 600;
+    font-size: 18px;
+    color: var(--gray);
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .faq {
+    max-width: 610px;
+  }
+  .header {
+    h2 {
+      font-size: 48px;
+    }
+
+    p {
+      font-size: 18px;
+    }
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .faq {
+    max-width: 343px;
+  }
+  .header {
+    h2 {
+      font: var(--font-h3-typography);
+    }
+  }
+}

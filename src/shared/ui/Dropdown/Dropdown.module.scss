@@ -1,0 +1,43 @@
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.menu {
+  visibility: hidden;
+  position: absolute;
+  background-color: white;
+  box-shadow: 0px 14px 44.4px 0px #141a281f;
+  margin-top: 10px;
+  left: calc(-370px + 96px);
+  width: 370px;
+  padding: 16px;
+  border-radius: 12px;
+  list-style-type: none;
+  opacity: 0;
+  transition:
+    opacity 0.3s ease,
+    visibility 0s linear 0.3s;
+}
+
+.menu.active {
+  visibility: visible;
+  opacity: 1;
+  transition:
+    opacity 0.3s ease,
+    visibility 0s linear;
+}
+
+.list {
+  padding: 0;
+  margin: 0;
+}
+
+.item {
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.item:hover {
+  background-color: #f1f1f1;
+}

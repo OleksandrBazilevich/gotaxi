@@ -1,0 +1,33 @@
+.container {
+  display: flex;
+  align-items: center;
+}
+
+.input {
+  margin-bottom: 0;
+  background: var(--ultra-light);
+  max-width: 173px;
+}
+
+.separator {
+  font-size: 18px;
+  margin: 0 16px;
+  font-weight: 600;
+  color: var(--gray);
+}
+
+@media screen and (max-width: 1024px) {
+  .input {
+    max-width: 90px;
+  }
+
+  .separator {
+    margin: 0 9px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .input {
+    max-width: 80px;
+  }
+}

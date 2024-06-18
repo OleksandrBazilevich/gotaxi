@@ -1,0 +1,87 @@
+.wrapper {
+  margin: 120px 300px 0 300px;
+}
+
+.carsGallery {
+  background: var(--ultra-light);
+}
+
+.text {
+  width: 38%;
+  h4 {
+    font: var(--font-h4-typography);
+    margin-bottom: 12px;
+  }
+  p {
+    font: var(--font-subheading-typography);
+    color: var(--gray);
+  }
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  row-gap: 20px;
+  column-gap: 24px;
+  overflow-x: auto;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.buttonContainer {
+  display: flex;
+}
+.header {
+  padding-top: 74px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 46px;
+}
+
+.loadMore {
+  display: none;
+}
+
+@media screen and (max-width: 1440px) {
+  .wrapper {
+    margin: 120px 60px 0 60px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .wrapper {
+    margin: 200px 50px 0 50px;
+  }
+  .gallery {
+    gap: 16px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .header {
+    flex-direction: column;
+  }
+  .gallery {
+    grid-template-columns: repeat(1, 1fr);
+    row-gap: 24px;
+  }
+
+  .loadMore {
+    display: block;
+    width: 100%;
+  }
+
+  .buttonContainer {
+    justify-content: space-between;
+    margin-bottom: 18px;
+    margin-top: 32px;
+  }
+
+  .text {
+    width: 100%;
+  }
+
+  .wrapper {
+    margin: 96px 16px 0 16px;
+  }
+}

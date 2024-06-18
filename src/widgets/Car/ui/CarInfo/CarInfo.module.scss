@@ -1,0 +1,45 @@
+.profile {
+  width: 35%;
+}
+
+.btn {
+  margin-top: 36px;
+}
+
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 28px;
+  padding: 0 21px;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  div {
+    font-weight: 500;
+    font-size: 13px;
+    color: var(--gray);
+    margin-top: 9px;
+  }
+}
+
+.BtnContainer {
+  width: 100%;
+}
+
+@media screen and (max-width: 375px) {
+  .wrapper {
+    margin-bottom: 16px;
+  }
+  .profile {
+    margin-top: 320px;
+    width: 100%;
+  }
+  .container {
+    padding: 0;
+  }
+}

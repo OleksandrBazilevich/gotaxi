@@ -1,0 +1,52 @@
+.select {
+  width: 32%;
+  font: var(--font-p-typography);
+
+  color: var(--gray);
+  [class$="-ValueContainer"] {
+    color: var(--gray);
+    padding: 0;
+  }
+
+  [class$="-placeholder"] {
+    color: var(--gray);
+  }
+
+  [class$="-control"] {
+    border-radius: 8px;
+    height: 58px;
+    padding: 6px 12px;
+    border: 1px solid var(--light) !important;
+    box-shadow: none !important;
+    cursor: pointer;
+  }
+
+  [class$="-MenuList"] {
+    background: var(--ultra-light);
+    border-radius: 8px;
+  }
+
+  [class$="-option"] {
+    color: var(--gray);
+    cursor: pointer;
+    background: var(--ultra-light);
+
+    &:focus {
+      background: var(--white);
+    }
+
+    &:hover {
+      background: var(--white);
+    }
+  }
+
+  svg {
+    path {
+      fill: var(--ultra-dark);
+    }
+  }
+
+  &.fullwidth {
+    width: 100%;
+  }
+}

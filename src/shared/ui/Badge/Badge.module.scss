@@ -1,0 +1,32 @@
+.badge {
+  border-radius: 39px;
+  padding: 3px 13px;
+  width: fit-content;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 18.2px;
+
+  &.default {
+    background: #d5d5d5;
+    color: #323232;
+  }
+
+  &.positive {
+    background: rgba(#35aa47, 0.15);
+    color: var(--positive);
+  }
+  &.neutral {
+    background: rgba(#dd8534, 0.15);
+    color: var(--warning);
+  }
+
+  &.negative {
+    background: rgba(#aa3535, 0.15);
+    color: #aa3535;
+  }
+
+  &.primary {
+    background: #debd00;
+    color: #323232;
+  }
+}

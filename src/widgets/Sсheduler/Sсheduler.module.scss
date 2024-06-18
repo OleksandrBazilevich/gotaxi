@@ -1,0 +1,170 @@
+.scheduler {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  overflow-x: auto;
+  overflow-y: hidden;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+  margin-bottom: 21px;
+}
+
+.currentMonth,
+.nextMonth {
+  display: flex;
+  align-items: center;
+}
+
+.nextMonth {
+  font: var(--font-22-typography);
+
+  text-align: right;
+  color: var(--gray);
+}
+
+.navButton {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+
+  &:focus {
+    outline: none;
+  }
+}
+.shedulerWrapper {
+  min-width: 1200px;
+  width: 100%;
+  border-radius: 10px;
+  border: 1px solid var(--light);
+}
+
+.schedulerTable {
+  width: 100%;
+  border-collapse: collapse;
+
+  tr {
+    height: 30px;
+    border-bottom: 1px solid var(--light);
+  }
+
+  thead {
+    background-color: var(--ultra-light);
+    tr {
+      border-bottom: none;
+    }
+  }
+
+  td {
+    max-width: 48px;
+
+    vertical-align: top;
+    position: relative;
+    box-sizing: border-box;
+  }
+}
+
+.dayNumber {
+  font-weight: bold;
+}
+
+.events {
+  width: 100%;
+  height: 100%;
+  margin-top: 3px;
+  margin-bottom: 3px;
+}
+
+.event {
+  position: relative;
+  z-index: -2;
+  width: 100%;
+  height: 100%;
+  border-radius: 3px;
+  font: var(--font-p-15-typography);
+  color: var(--ultra-dark);
+  padding: 8px 12px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.eventTitle {
+  width: 70%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-weight: bold;
+}
+
+.eventTime {
+  font: var(--font-p-15-typography);
+}
+
+.headerCell {
+  border-radius: 8px;
+  height: 60px;
+  width: 48px;
+
+  &.weekend {
+    color: #dd3e34;
+  }
+
+  &.today {
+    background: var(--primary);
+    position: relative;
+  }
+  &.today::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 1.5px;
+    height: 80vh;
+    background: var(--primary);
+    z-index: -1;
+  }
+}
+.headerCellTitle {
+  font: var(--font-20-typography);
+
+  margin-bottom: 4px;
+}
+
+.headerCellText {
+  font: var(--font-p-15-typography);
+}
+
+.icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 12px;
+  cursor: pointer;
+}
+
+.iconRight {
+  transform: rotate(180deg);
+}
+
+.caption {
+  align-items: center;
+  display: flex;
+}
+
+.title {
+  font: var(--font-22-typography);
+
+  margin-right: 12px;
+  color: var(--ultra-dark);
+}

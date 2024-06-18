@@ -1,0 +1,20 @@
+.link {
+  color: #245ff6bd;
+  text-decoration: none;
+  font-weight: 600;
+
+  transition: color 0.3s linear;
+
+  &:hover {
+    color: #3265e7;
+  }
+}
+
+.gray {
+  color: var(--gray);
+  transition: color 0.3s linear;
+
+  &:hover {
+    color: var(--black);
+  }
+}

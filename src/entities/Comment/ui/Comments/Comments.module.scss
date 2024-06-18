@@ -1,0 +1,44 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 24px;
+}
+
+.btn {
+  width: 200px;
+}
+
+.icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 8px;
+}
+
+.title {
+  font: var(--font-h4-typography);
+  line-height: 30px;
+}
+
+.wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.total {
+  margin-left: 8px;
+  font-weight: 600;
+  color: var(--dark-gray);
+  margin-bottom: -3px;
+}
+
+@media screen and (max-width: 375px) {
+  .header {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .btn {
+    margin-top: 22px;
+    width: 100%;
+  }
+}

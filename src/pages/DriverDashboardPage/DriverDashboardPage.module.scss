@@ -1,0 +1,43 @@
+.title {
+  font: var(--font-h3-typography);
+
+  margin: 30px 0px;
+}
+
+.show {
+  display: flex !important;
+}
+
+.cardContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  overflow-x: auto;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+.container {
+  display: flex;
+  margin-bottom: 60px;
+}
+
+@media screen and (max-width: 1024px) {
+  .container {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .title {
+    font-size: 36px;
+    line-height: 39.6px;
+  }
+
+  .cardContainer {
+    flex-direction: column;
+  }
+}

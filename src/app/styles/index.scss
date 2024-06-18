@@ -1,0 +1,57 @@
+@import "./variables/global";
+
+@font-face {
+  font-family: "Gilroy-ExtraBold";
+  src:
+    local("Gilroy-ExtraBold"),
+    url(../../shared/assets/fonts/Gilroy-ExtraBold.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Gilroy-Bold";
+  src:
+    local("Gilroy-Bold"),
+    url(../../shared/assets/fonts/Gilroy-Bold.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Gilroy-SemiBold";
+  src:
+    local("Gilroy-SemiBold"),
+    url(../../shared/assets/fonts/Gilroy-SemiBold.ttf) format("truetype");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font: var(--font-subheading-typography);
+  background: var(--white);
+  color: var(--black);
+  letter-spacing: var(--letter-spacing);
+  min-height: 100vh;
+  margin: 0;
+
+  &.noScroll {
+    overflow: hidden;
+  }
+}
+
+.rdp {
+  margin: 0 !important;
+}
+
+.rdp-button {
+  opacity: 1 !important;
+}
+
+input,
+button,
+textarea,
+select {
+  margin: 0;
+  font: inherit;
+}

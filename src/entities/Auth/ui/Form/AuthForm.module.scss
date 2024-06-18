@@ -1,0 +1,31 @@
+.wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form {
+  background-color: var(--ultra-light);
+  position: relative;
+  width: 550px;
+  padding: 44px 36px;
+  border-radius: 20px;
+  margin: 0 16px;
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 36px;
+  font-size: 36px;
+  font-weight: 800;
+}
+
+@media screen and (max-width: 375px) {
+  .form {
+    padding: 44px 15px;
+  }
+  .title {
+    font-size: 32px;
+  }
+}

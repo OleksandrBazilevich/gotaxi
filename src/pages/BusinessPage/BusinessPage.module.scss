@@ -1,0 +1,432 @@
+.container {
+  max-width: 463px;
+}
+
+.title {
+  font: var(--font-h1-typography);
+
+  span {
+    color: var(--primary);
+  }
+}
+
+.subtitle {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 25.2px;
+  letter-spacing: -0.02em;
+  color: var(--gray);
+  margin-top: 16px;
+}
+
+.btn {
+  width: 200px;
+  margin-top: 58px;
+}
+
+.imgContainer {
+  aspect-ratio: 1.4;
+  width: 760px;
+  position: relative;
+  border-radius: 20px;
+  background-color: #eaac1e;
+
+  img {
+    width: 100%;
+    position: absolute;
+    bottom: 0px;
+  }
+}
+
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.banner {
+  width: 100%;
+  padding: 53px 75px;
+  background: var(--primary);
+  display: flex;
+  align-items: center;
+  border-radius: 20px;
+  margin-top: 90px;
+  justify-content: space-between;
+  overflow-x: auto;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+.bannerItem {
+  h3 {
+    font-size: 50px;
+    font-weight: 800;
+    line-height: 66px;
+    letter-spacing: -0.02em;
+  }
+
+  p {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 25.2px;
+    letter-spacing: -0.02em;
+    color: var(--gray);
+    margin-top: 16px;
+  }
+}
+.why {
+  margin-top: 155px;
+}
+
+.whyWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  h2 {
+    margin-bottom: 46px;
+  }
+}
+
+.whyItem {
+  width: 100%;
+  background: var(--ultra-light);
+  border-radius: 16px;
+  padding: 16px;
+  font: var(--font-20-typography);
+
+  margin-bottom: 16px;
+
+  &:first-child {
+    margin-top: 46px;
+  }
+}
+
+.whyContainer {
+  display: flex;
+  align-items: center;
+}
+
+.whyIcon {
+  min-width: 54px;
+  min-height: 54px;
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--primary);
+  margin-right: 20px;
+}
+
+.whyLeft {
+  max-width: 560px;
+
+  .title {
+    text-align: center;
+  }
+}
+
+.whyImg {
+  position: relative;
+  width: 60%;
+  margin-left: 40px;
+  img {
+    width: 100%;
+    margin-left: 50px;
+    aspect-ratio: 1.45;
+  }
+}
+.profit {
+  margin-top: 140px;
+}
+
+.profitTitle {
+  max-width: 760px;
+  text-align: center;
+  margin: 0 auto 54px;
+  font: var(--font-h3-typography);
+
+  span {
+    color: var(--primary);
+  }
+}
+
+.profitWrapper {
+  display: flex;
+}
+
+.profitBanner {
+  position: relative;
+  margin-left: 24px;
+  background: var(--primary);
+  border-radius: 20px;
+  padding: 50px;
+
+  h2 {
+    font-size: 60px;
+    font-weight: 800;
+    line-height: 66px;
+    letter-spacing: -0.02em;
+    margin-bottom: 16px;
+  }
+
+  p {
+    color: var(--gray);
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 25.2px;
+    letter-spacing: -0.02em;
+    margin-bottom: 50px;
+  }
+}
+
+.profitImg {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+.profitBtn {
+  width: 170px;
+}
+
+.contactUs {
+  position: relative;
+  padding: 64px 163px;
+  background: var(--ultra-light);
+  margin: 95px 0 130px;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 20px;
+
+  img {
+    margin-top: -170px;
+    margin-left: -200px;
+  }
+}
+
+.contactUsWrapper {
+  max-width: 450px;
+  h3 {
+    font: var(--font-h3-typography);
+
+    margin-bottom: 12px;
+  }
+
+  p {
+    color: var(--gray);
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 25.2px;
+    letter-spacing: -0.02em;
+    margin-bottom: 37px;
+  }
+}
+
+.contactUsBtnWrapper {
+  display: flex;
+}
+
+.contactUsBtn {
+  width: 180px;
+  &:first-child {
+    margin-right: 15px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .banner {
+    padding: 28px 30px;
+    margin-top: 81px;
+  }
+
+  .bannerItem {
+    margin-right: 30px;
+
+    h3 {
+      font: var(--font-h3-typography);
+    }
+
+    p {
+      margin-top: 8px;
+    }
+  }
+
+  .container {
+    max-width: 380px;
+  }
+
+  .imgContainer {
+    width: 519px;
+  }
+  .title {
+    font-size: 56px;
+    line-height: 61px;
+  }
+  .mainWrapper {
+    margin-top: 81px;
+  }
+
+  .whyWrapper {
+    flex-direction: column;
+  }
+
+  .whyLeft {
+    max-width: none;
+  }
+
+  .whyItemsWrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 16px;
+  }
+
+  .whyItem {
+    &:first-child {
+      margin-top: 0px;
+    }
+    width: 100%;
+  }
+  .contactUs {
+    padding: 48px 80px;
+
+    flex-direction: column;
+    justify-content: center;
+
+    img {
+      margin-top: 0px;
+      margin-left: 0px;
+    }
+  }
+
+  .contactUsWrapper {
+    max-width: none;
+    width: 100%;
+    h3 {
+      font-size: 32px;
+      line-height: 35.2px;
+      text-align: center;
+    }
+
+    p {
+      font: var(--font-p-typography);
+
+      text-align: center;
+    }
+  }
+  .contactUsBtnWrapper {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+  .imgContainer {
+    width: 100%;
+  }
+  .title {
+    font-size: 36px;
+    line-height: 39px;
+  }
+  .btn {
+    width: 166px;
+    margin-top: 36px;
+    margin-bottom: 44px;
+  }
+
+  .container {
+    max-width: none;
+  }
+  .mainWrapper {
+    margin-top: 30px;
+  }
+
+  .banner {
+    padding: 19px 27px;
+    margin-top: 44px;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .bannerItem {
+    text-align: center;
+    margin-right: 0px;
+    margin-bottom: 30px;
+
+    h3 {
+      font: var(--font-h3-typography);
+    }
+
+    p {
+      margin-top: 8px;
+    }
+  }
+
+  .whyItemsWrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .whyImg {
+    width: 100%;
+    margin-left: 0px;
+    img {
+      margin-left: 0px;
+    }
+  }
+
+  .profitWrapper {
+    flex-direction: column;
+    margin-bottom: 70px;
+  }
+
+  .profitImg {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+  }
+
+  .profitBanner {
+    margin-left: 0px;
+    padding: 46px 16px 0px;
+
+    h2 {
+      font: var(--font-h3-typography);
+
+      text-align: center;
+    }
+
+    p {
+      font: var(--font-p-typography);
+
+      text-align: center;
+    }
+  }
+
+  .profitBtn {
+    width: 100%;
+    margin-bottom: 104px;
+  }
+
+  .contactUs {
+    margin-top: 0;
+    margin-bottom: 63px;
+
+    padding: 48px 16px;
+  }
+
+  .contactUsBtnWrapper {
+    flex-direction: column;
+  }
+
+  .contactUsBtn {
+    width: 100%;
+    margin-bottom: 12px;
+  }
+}

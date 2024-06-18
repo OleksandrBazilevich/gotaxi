@@ -1,0 +1,40 @@
+.header {
+  height: 50px;
+  margin: 24px 300px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.text {
+  font: var(--font-p-15-typography);
+
+  margin-right: 24px;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+}
+
+@media screen and (max-width: 1440px) {
+  .header {
+    margin: 24px 60px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .header {
+    margin: 24px 50px;
+  }
+  .text {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .header {
+    height: 40px;
+    margin: 24px 16px;
+  }
+}

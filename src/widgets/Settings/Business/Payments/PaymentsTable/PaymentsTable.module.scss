@@ -1,0 +1,172 @@
+.total {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 15.4px;
+  letter-spacing: -0.02em;
+
+  display: flex;
+  align-items: center;
+}
+
+.difference {
+  svg {
+    width: 18px;
+    height: 18px;
+    transform: rotate(145deg);
+    margin-right: 3px;
+
+    path {
+      stroke: var(--positive);
+      fill: var(--positive);
+    }
+  }
+  display: flex;
+  align-items: center;
+  margin-left: 6px;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 19.6px;
+  letter-spacing: -0.02em;
+  color: var(--positive);
+
+  &.falling {
+    svg {
+      transform: rotate(240deg);
+
+      path {
+        stroke: var(--warning);
+        fill: var(--warning);
+      }
+    }
+    color: var(--warning);
+  }
+}
+
+.header {
+  cursor: pointer;
+  color: var(--gray);
+  font: var(--font-p-typography);
+
+  display: flex;
+  align-items: center;
+}
+
+.title {
+  margin-right: 10px;
+}
+
+.carInfo {
+  display: flex;
+}
+
+.sortContainer {
+  width: 25px;
+  height: 25px;
+  border-radius: 4px;
+  padding: 4px;
+  background: var(--white);
+  margin-right: 14px;
+}
+
+.img {
+  width: 57px;
+  height: 37px;
+  border-radius: 2px;
+  margin-right: 12px;
+}
+
+.carInfoContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  h4 {
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 18.2px;
+    color: var(--ultra-dark);
+  }
+
+  p {
+    font: var(--font-caption-12-typography);
+
+    color: var(--gray);
+  }
+}
+
+.fileName {
+  margin-left: 8px;
+  margin-right: 8px;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+}
+
+.fileName,
+.text {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 15.4px;
+  letter-spacing: -0.02em;
+}
+
+.actions {
+  width: 34px;
+  height: 34px;
+  border-radius: 4px;
+  margin-right: 8px;
+  padding: 0;
+
+  svg {
+    width: 18px;
+    height: 18px;
+  }
+}
+
+.fileInfo {
+  display: flex;
+  align-items: center;
+}
+
+.actionsContainer {
+  display: flex;
+  justify-content: start;
+}
+
+.wrapper {
+  width: 100%;
+  margin-top: 50px;
+}
+
+.search {
+  width: 400px;
+  padding: 9px 16px;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 19px;
+}
+
+.filter {
+  height: 40px;
+  width: 96px;
+  padding: 9px 16px;
+
+  svg {
+    margin-right: 8px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .container {
+    margin-right: 12px;
+  }
+  .search {
+    width: 100%;
+    margin-top: 12px;
+  }
+}

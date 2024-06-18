@@ -1,0 +1,109 @@
+.header {
+  height: 50px;
+  margin: 24px 300px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  margin-right: 38px;
+  cursor: pointer;
+}
+
+.location {
+  cursor: pointer;
+  font: var(--font-p-typography);
+  margin-right: 24px;
+  display: flex;
+  align-items: center;
+  color: var(--ultra-dark);
+  transition: color 0.2s linear;
+
+  &:hover {
+    color: var(--dark-gray);
+  }
+
+  &:active {
+    color: var(--gray);
+  }
+}
+
+.button {
+  margin-right: 10px;
+}
+
+.wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.icon {
+  fill: var(--primary);
+  margin-right: 5px;
+}
+
+.navWrapper {
+  display: flex;
+  align-items: center;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.burgerMenu {
+  display: none;
+}
+
+.link {
+  font: var(--font-p-typography);
+  margin-right: 21px;
+
+  &.active {
+    color: var(--black);
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  .header {
+    margin: 24px 60px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .wrapper {
+    display: none;
+  }
+
+  .burgerMenu {
+    display: block;
+  }
+
+  .location {
+    display: none;
+  }
+  .nav {
+    display: none;
+  }
+  .header {
+    margin: 24px 50px;
+  }
+  .text {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .header {
+    height: 40px;
+    margin: 24px 16px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .header {
+    height: 40px;
+  }
+}

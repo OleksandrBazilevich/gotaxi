@@ -1,0 +1,58 @@
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.input {
+  border: 1px solid var(--light);
+  border-radius: 8px;
+  padding: 16px;
+  width: 23%;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 600;
+  caret-color: transparent;
+
+  &::placeholder {
+    text-align: center;
+    color: var(--gray);
+    font-size: 18px;
+    font-weight: 600;
+  }
+
+  &:focus {
+    border-color: var(--gray);
+    outline: none;
+  }
+}
+
+.error {
+  font-weight: 600;
+  color: var(--gray);
+  margin: 24px 0 24px 10px;
+}
+
+.errorInput {
+  border-color: red;
+}
+
+.error {
+  color: red;
+  margin-top: 0.5rem;
+}
+
+.modelYearWrapper {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.modelYearInput {
+  width: 4rem;
+  height: 2rem;
+  text-align: center;
+  font-size: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  background-color: #f7f7f7;
+}

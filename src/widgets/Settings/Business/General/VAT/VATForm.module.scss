@@ -1,0 +1,32 @@
+.form {
+  max-width: 504px;
+  width: 100%;
+}
+
+.title {
+  font: var(--font-p-15-typography);
+
+  color: var(--ultra-dark);
+  margin-bottom: 14px;
+}
+
+.fieldWithIcon {
+  svg {
+    path {
+      fill: var(--warning);
+    }
+  }
+  &.comfirmed {
+    svg {
+      path {
+        fill: var(--positive);
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .btn {
+    width: 100%;
+  }
+}

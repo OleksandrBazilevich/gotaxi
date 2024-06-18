@@ -1,0 +1,33 @@
+.bullet {
+  background: var(--ultra-light);
+  min-width: 300px;
+  height: 420px;
+  border-radius: 20px;
+  padding: 32px;
+}
+
+.iconContainer {
+  background: var(--primary);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 58px;
+  height: 58px;
+  border-radius: 10px;
+}
+.icon {
+  fill: var(--black);
+  width: 34px;
+  height: 34px;
+}
+
+.title {
+  font: var(--font-h3-typography);
+  margin: 100px 0 24px 0;
+}
+
+.description {
+  font: var(--font-subheading-typography);
+  color: var(--gray);
+  margin-bottom: 15px;
+}

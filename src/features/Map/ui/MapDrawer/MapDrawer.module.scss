@@ -1,0 +1,21 @@
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 8px;
+  padding: 0;
+  width: 88px;
+  height: 41px;
+}
+
+.icon {
+  width: 16px;
+  margin-right: 1.5px;
+  fill: var(--black);
+}
+
+@media screen and (max-width: 375px) {
+  .btn {
+    width: 50%;
+  }
+}

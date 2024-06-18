@@ -1,0 +1,129 @@
+.sidebar {
+  width: 333px;
+  background: var(--ultra-light);
+  min-height: 100vh;
+  padding: 24px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  transition: width 0.3s ease;
+
+  &.closed {
+    width: 92px;
+  }
+}
+
+.search {
+  margin: 30px 0;
+}
+
+.menu {
+  margin-top: 32px;
+}
+
+.menuItem {
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+  font: var(--font-p-typography);
+
+  color: var(--gray);
+  border-radius: 4px;
+  padding: 12px;
+  transition:
+    padding 0.3s ease,
+    font-size 0.3s ease;
+
+  &.active {
+    background: var(--white);
+    color: var(--black);
+  }
+}
+
+.itemContainer {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  margin-right: 32px;
+}
+
+.icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  transition: margin-right 0.3s ease;
+}
+
+.notification {
+  border-radius: 39px;
+  background: #ff00004d;
+  padding: 3px 7px;
+  color: #581111;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  margin-top: 30px;
+  transition: transform 0.3s ease;
+
+  &.closed {
+    transform: rotate(180deg);
+  }
+}
+
+.wrapper {
+  cursor: pointer;
+  padding: 14px;
+  display: flex;
+  background: var(--white);
+  align-items: center;
+  margin-top: 15px;
+  &:hover {
+    .name {
+      color: var(--gray);
+    }
+    .profileIcon {
+      path {
+        stroke: var(--gray);
+      }
+    }
+  }
+}
+
+.container {
+  margin-left: 13px;
+}
+
+.name {
+  font-weight: 600;
+  color: var(--ultra-dark);
+  margin-bottom: 5px;
+  display: flex;
+  align-items: center;
+  transition: color 0.2s linear;
+}
+
+.profileIcon {
+  transform: rotate(180deg);
+  width: 20px;
+  height: 20px;
+  margin-left: 8px;
+
+  path {
+    transition: stroke 0.2s linear;
+
+    stroke: var(--ultra-dark);
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .wrapper {
+    margin-bottom: 16px;
+  }
+}
