@@ -270,7 +270,7 @@ const CarDetailsPage = () => {
             </div>
             <div className={styles.additionalInfo}>
               <h2 className={styles.title}>
-                Additional information from <span>Warsaw Car Fleet</span>
+                Additional information from <span> Warsaw Car Fleet</span>
               </h2>
               <div className={styles.description}>
                 Welcome to my vehicle's listing! I want to ensure you have all

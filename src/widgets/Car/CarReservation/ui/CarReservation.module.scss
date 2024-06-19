@@ -32,10 +32,12 @@
 
 .rent {
   margin-top: 28px;
+
   font-size: 18px;
   font-weight: 600;
   line-height: 25.2px;
-  letter-spacing: -0.02em;
+  text-align: left;
+
   color: var(--ultra-dark);
 }
 
@@ -44,8 +46,9 @@
 }
 
 .title {
-  font: var(--font-p-15-typography);
-
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 15.25px;
   margin-bottom: 16px;
   color: var(--ultra-dark);
 }
@@ -70,7 +73,7 @@
   font-size: 18px;
   font-weight: 600;
   line-height: 25.2px;
-  letter-spacing: -0.02em;
+  text-align: left;
 }
 
 .name {
@@ -99,13 +102,19 @@
   margin-bottom: 50px;
 
   h4 {
-    font: var(--font-h4-typography);
+    font-size: 28px;
+    font-weight: 800;
+    line-height: 30.8px;
+    text-align: left;
     color: var(--ultra-dark);
     margin-bottom: 6px;
   }
 
   span {
-    font: var(--font-p-typography);
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 19.68px;
+    text-align: left;
 
     color: var(--gray);
   }
@@ -123,6 +132,7 @@
   width: 164px;
   height: 43px;
   margin-bottom: 16px;
+  border: 1px solid var(--light);
 
   &:hover {
     border-color: var(--ultra-dark);
@@ -159,7 +169,10 @@
 }
 
 .modalTitle {
-  font: var(--font-h3-typography);
+  font-size: 40px;
+  font-weight: 800;
+  line-height: 44px;
+  text-align: center;
 
   margin-bottom: 16px;
 }
@@ -168,7 +181,8 @@
   font-size: 18px;
   font-weight: 600;
   line-height: 25.2px;
-  letter-spacing: -0.02em;
+  text-align: center;
+
   color: var(--gray);
   margin-bottom: 24px;
 }
@@ -195,7 +209,10 @@
   }
 
   .name {
-    font: var(--font-20-typography);
+    font-size: 22px;
+    font-weight: 800;
+    line-height: 24.2px;
+    text-align: left;
   }
 
   .btn {

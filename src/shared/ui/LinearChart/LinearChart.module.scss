@@ -20,7 +20,10 @@
   align-items: center;
   background: rgba(255, 255, 255, 0.7);
 
-  font: var(--font-caption-12-typography);
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 15.6px;
+  text-align: center;
 
   text-align: center;
   color: var(--medium-dark);

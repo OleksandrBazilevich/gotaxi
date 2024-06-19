@@ -2,50 +2,18 @@
   font-size: 14px;
   font-weight: 600;
   line-height: 15.4px;
-  letter-spacing: -0.02em;
-
   display: flex;
   align-items: center;
-}
-
-.difference {
-  svg {
-    width: 18px;
-    height: 18px;
-    transform: rotate(145deg);
-    margin-right: 3px;
-
-    path {
-      stroke: var(--positive);
-      fill: var(--positive);
-    }
-  }
-  display: flex;
-  align-items: center;
-  margin-left: 6px;
-  font-size: 14px;
-  font-weight: 600;
-  line-height: 19.6px;
-  letter-spacing: -0.02em;
-  color: var(--positive);
-
-  &.falling {
-    svg {
-      transform: rotate(240deg);
-
-      path {
-        stroke: var(--warning);
-        fill: var(--warning);
-      }
-    }
-    color: var(--warning);
-  }
 }
 
 .header {
   cursor: pointer;
   color: var(--gray);
-  font: var(--font-p-typography);
+
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 20.8px;
+  text-align: left;
 
   display: flex;
   align-items: center;
@@ -55,7 +23,6 @@
   font-size: 14px;
   font-weight: 600;
   line-height: 15.4px;
-  letter-spacing: -0.02em;
 }
 
 .title {
@@ -91,11 +58,16 @@
     font-size: 14px;
     font-weight: 600;
     line-height: 18.2px;
+    text-align: left;
+
     color: var(--ultra-dark);
   }
 
   p {
-    font: var(--font-caption-12-typography);
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 15.6px;
+    text-align: left;
 
     color: var(--gray);
   }
@@ -105,7 +77,6 @@
   font-size: 14px;
   font-weight: 600;
   line-height: 15.4px;
-  letter-spacing: -0.02em;
 }
 
 .actions {
@@ -157,12 +128,15 @@
 }
 
 .name {
-  font-size: 14px;
-  font-weight: 600;
-  line-height: 18.2px;
-
   h3 {
     font-size: 14px;
+    font-weight: 600;
+    line-height: 18.2px;
+    margin-bottom: 4px;
+  }
+  span {
+    font-size: 14px;
+    font-weight: 600;
     line-height: 18.2px;
   }
 }
@@ -173,7 +147,11 @@
 
 .description {
   margin-top: 2px;
-  font: var(--font-caption-12-typography);
+
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 15.6px;
+  text-align: left;
 
   color: var(--gray);
 

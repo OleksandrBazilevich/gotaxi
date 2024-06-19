@@ -31,13 +31,21 @@
 }
 
 .title {
-  font: var(--font-h1-typography);
+  font-size: 60px;
+  font-weight: 800;
+  line-height: 66px;
+  text-align: left;
+
   margin-bottom: 16px;
 }
 
 .text {
   color: var(--gray);
-  font: var(--font-subheading-typography);
+
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 25.2px;
+  text-align: left;
 }
 
 .wrapper {

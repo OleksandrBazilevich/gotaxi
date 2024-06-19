@@ -2,8 +2,6 @@
   font-size: 14px;
   font-weight: 600;
   line-height: 15.4px;
-  letter-spacing: -0.02em;
-
   display: flex;
   align-items: center;
 }
@@ -26,7 +24,6 @@
   font-size: 14px;
   font-weight: 600;
   line-height: 19.6px;
-  letter-spacing: -0.02em;
   color: var(--positive);
 
   &.falling {
@@ -45,7 +42,11 @@
 .header {
   cursor: pointer;
   color: var(--gray);
-  font: var(--font-p-typography);
+
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 20.8px;
+  text-align: left;
 
   display: flex;
   align-items: center;
@@ -75,25 +76,6 @@
   margin-right: 12px;
 }
 
-.carInfoContainer {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-
-  h4 {
-    font-size: 14px;
-    font-weight: 600;
-    line-height: 18.2px;
-    color: var(--ultra-dark);
-  }
-
-  p {
-    font: var(--font-caption-12-typography);
-
-    color: var(--gray);
-  }
-}
-
 .fileName {
   margin-left: 8px;
   margin-right: 8px;
@@ -101,14 +83,16 @@
   justify-content: space-between;
   width: 100%;
   align-items: center;
+  color: var(--ultra-dark);
+  font-weight: 700;
 }
 
 .fileName,
 .text {
   font-size: 14px;
   font-weight: 600;
-  line-height: 15.4px;
-  letter-spacing: -0.02em;
+  line-height: 18.2px;
+  text-align: left;
 }
 
 .actions {

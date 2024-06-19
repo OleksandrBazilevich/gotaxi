@@ -17,7 +17,10 @@
 }
 
 .title {
-  font: var(--font-p-15-typography);
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 14.25px;
+  text-align: left;
 
   color: var(--ultra-dark);
   margin-bottom: 14px;
@@ -41,13 +44,6 @@
     }
     margin-right: 8px;
   }
-}
-
-.text {
-  font: var(--font-caption-12-typography);
-
-  color: var(--gray);
-  margin-bottom: 22px;
 }
 
 .fieldWithIcon {

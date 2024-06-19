@@ -6,14 +6,6 @@
   border: 1px solid var(--light);
 }
 
-.location {
-  font: var(--font-p-typography);
-
-  color: var(--ultra-dark);
-  display: flex;
-  align-items: center;
-}
-
 .icon {
   margin-right: 2.5px;
   fill: var(--primary);
@@ -30,7 +22,26 @@
 }
 
 .name {
-  font: var(--font-22-typography);
+  font-size: 22px;
+  font-weight: 800;
+  line-height: 24.2px;
+  text-align: left;
+}
+
+.driverProfile {
+  h3 {
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 13.3px;
+    text-align: left;
+  }
+
+  span {
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 13.3px;
+    text-align: left;
+  }
 }
 
 .year {
@@ -40,7 +51,11 @@
 
 .description {
   margin-top: 10px;
-  font-weight: 700;
+
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 13.3px;
+  text-align: left;
   color: var(--gray);
 
   span {
@@ -56,10 +71,11 @@
   display: flex;
   justify-content: space-between;
   margin-bottom: 12px;
+
+  font-size: 14px;
   font-weight: 600;
-  font-size: 18px;
-  line-height: 25px;
-  letter-spacing: -2%;
+  line-height: 19.6px;
+  text-align: left;
 
   div {
     color: var(--gray);
@@ -82,7 +98,10 @@
 
 @media screen and (max-width: 1024px) {
   .name {
-    font: var(--font-p-typography);
+    font-size: 16px;
+    font-weight: 800;
+    line-height: 17.6px;
+    text-align: left;
   }
   .card {
     padding: 20px, 0px, 16px, 0px;
@@ -93,12 +112,19 @@
     line-height: 10.45px;
   }
   .payment {
-    font: var(--font-caption-12-typography);
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 16.8px;
+    text-align: left;
   }
 
   .btn {
     width: 48%;
-    font: var(--font-caption-12-typography);
+
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 16.8px;
+    text-align: left;
 
     height: 30px;
   }
@@ -109,7 +135,10 @@
     width: 100%;
   }
   .name {
-    font: var(--font-22-typography);
+    font-size: 22px;
+    font-weight: 800;
+    line-height: 24.2px;
+    text-align: left;
   }
 
   .description {
@@ -123,7 +152,10 @@
   }
 
   .btn {
-    font: var(--font-p-15-typography);
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 14.25px;
+    text-align: left;
 
     height: 42px;
   }

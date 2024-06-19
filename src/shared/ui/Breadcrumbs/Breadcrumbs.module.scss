@@ -6,7 +6,11 @@
 .breadcrumbItem {
   display: flex;
   align-items: center;
-  font: var(--font-caption-12-typography);
+
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 11.4px;
+  text-align: left;
 
   svg {
     margin-top: -4px;

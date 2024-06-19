@@ -177,6 +177,7 @@ export const columns = [
           rating={info.row.original.driver.rating}
           surname={info.row.original.driver.surname}
           showSurname
+          cls={styles.driver}
         />
         <DriverInfo />
       </div>

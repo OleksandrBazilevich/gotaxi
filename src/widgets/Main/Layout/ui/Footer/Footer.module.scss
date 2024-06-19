@@ -20,14 +20,6 @@
   margin-left: 9px;
 }
 
-.text {
-  font: var(--font-p-15-typography);
-
-  margin-right: 24px;
-  display: flex;
-  align-items: center;
-}
-
 .button {
   margin-right: 10px;
 }
@@ -57,11 +49,19 @@
 }
 
 .link {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 15.2px;
+  text-align: left;
+
   margin-right: 21px;
 }
 
 .rights {
+  font-size: 16px;
   font-weight: 600;
+  line-height: 15.2px;
+  text-align: left;
   color: var(--gray);
 }
 

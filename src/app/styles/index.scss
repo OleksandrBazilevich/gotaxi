@@ -1,24 +1,27 @@
 @import "./variables/global";
 
 @font-face {
-  font-family: "Gilroy-ExtraBold";
+  font-family: Gilroy;
   src:
     local("Gilroy-ExtraBold"),
     url(../../shared/assets/fonts/Gilroy-ExtraBold.ttf) format("truetype");
+  font-weight: 800;
 }
 
 @font-face {
-  font-family: "Gilroy-Bold";
+  font-family: Gilroy;
   src:
     local("Gilroy-Bold"),
     url(../../shared/assets/fonts/Gilroy-Bold.ttf) format("truetype");
+  font-weight: 700;
 }
 
 @font-face {
-  font-family: "Gilroy-SemiBold";
+  font-family: Gilroy;
   src:
     local("Gilroy-SemiBold"),
     url(../../shared/assets/fonts/Gilroy-SemiBold.ttf) format("truetype");
+  font-weight: 600;
 }
 
 * {
@@ -28,7 +31,10 @@
 }
 
 body {
-  font: var(--font-subheading-typography);
+  font-family: Gilroy, sans-serif;
+  font-size: 15px;
+  line-height: 14px;
+  font-weight: 700;
   background: var(--white);
   color: var(--black);
   letter-spacing: var(--letter-spacing);

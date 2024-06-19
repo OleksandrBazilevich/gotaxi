@@ -22,12 +22,20 @@
 }
 
 .title {
-  font: var(--font-h3-typography);
+  font-size: 40px;
+  font-weight: 800;
+  line-height: 44px;
+  text-align: left;
+
   margin: 100px 0 24px 0;
 }
 
 .description {
-  font: var(--font-subheading-typography);
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 25.2px;
+  text-align: left;
+
   color: var(--gray);
   margin-bottom: 15px;
 }

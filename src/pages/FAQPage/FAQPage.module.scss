@@ -14,7 +14,10 @@
 }
 
 .title {
-  font: var(--font-h1-typography);
+  font-size: 60px;
+  font-weight: 800;
+  line-height: 66px;
+  text-align: left;
   color: var(--ultra-dark);
   margin-bottom: 25px;
 }
@@ -23,7 +26,8 @@
   font-size: 18px;
   font-weight: 600;
   line-height: 28.8px;
-  letter-spacing: -0.02em;
+  text-align: left;
+
   color: var(--gray);
 }
 
@@ -64,7 +68,10 @@
   }
 
   .title {
-    font: var(--font-h3-typography);
+    font-size: 40px;
+    font-weight: 800;
+    line-height: 44px;
+    text-align: left;
   }
 
   .container {

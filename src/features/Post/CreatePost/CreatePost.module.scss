@@ -9,14 +9,21 @@
 }
 
 .title {
-  font: var(--font-h4-typography);
-  letter-spacing: -0.02em;
+
+  font-size: 28px;
+  font-weight: 800;
+  line-height: 30.8px;
+  text-align: left;
   margin-bottom: 19px;
 }
 
 .description {
   width: 50%;
-  font: var(--font-p-typography);
+
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  text-align: left;
 
   color: var(--gray);
   margin-bottom: 36px;
@@ -37,7 +44,6 @@
   font-size: 18px;
   font-weight: 700;
   line-height: 19.8px;
-  letter-spacing: -0.02em;
   color: var(--ultra-dark);
   margin-bottom: 32px;
 }
@@ -57,7 +63,10 @@
 }
 
 .selectDescription {
-  font: var(--font-caption-12-typography);
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 18px;
+  text-align: left;
 
   color: var(--gray);
   margin-top: 8px;
@@ -65,9 +74,10 @@
 }
 
 .btn {
-  font: var(--font-p-15-typography);
 
-  text-align: left;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 14.25px;
   width: 320px;
   height: 50px;
   margin: 0 auto;

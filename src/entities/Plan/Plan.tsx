@@ -88,7 +88,11 @@ const plans: IPlanItemProps[] = [
     isBestValue: true,
     price: "custom",
     button: (
-      <Button cls={styles.btn} fullWidth theme="outlined">
+      <Button
+        cls={classNames(styles.btn, {}, [styles.outlinedBtn])}
+        fullWidth
+        theme="outlined"
+      >
         Request a quote
       </Button>
     )

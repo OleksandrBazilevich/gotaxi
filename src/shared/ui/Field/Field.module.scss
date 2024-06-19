@@ -1,5 +1,5 @@
 .Field {
-  padding: 16px;
+  padding: 11.5px 16px;
   position: relative;
   border-radius: 8px;
   border: 1px solid var(--light);
@@ -10,7 +10,12 @@
     width: 100%;
     border: none;
     background: inherit;
+
+    font-size: 18px;
     font-weight: 600;
+    line-height: 25.2px;
+    text-align: left;
+
     color: var(--gray);
 
     -moz-appearance: textfield;
@@ -22,7 +27,10 @@
   }
 
   input::placeholder {
+    font-size: 18px;
     font-weight: 600;
+    line-height: 25.2px;
+    text-align: left;
     color: var(--gray);
   }
 

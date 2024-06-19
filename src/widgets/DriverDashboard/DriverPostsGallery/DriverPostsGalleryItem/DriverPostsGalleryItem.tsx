@@ -45,7 +45,12 @@ const DriverPostsGalleryItem: FC<IDriverPostsGalleryItem> = (props) => {
 
   return (
     <div className={classNames(styles.card, {}, [])}>
-      <UserProfile img={avatar} name={fleetName} rating={fleetRating} />
+      <UserProfile
+        cls={styles.driverProfile}
+        img={avatar}
+        name={fleetName}
+        rating={fleetRating}
+      />
       <div className={styles.imageContainer}>
         <img
           src={img}

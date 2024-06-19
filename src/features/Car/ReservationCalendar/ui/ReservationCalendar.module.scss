@@ -15,8 +15,11 @@
 }
 
 .title {
-  font: var(--font-h4-typography);
-  letter-spacing: -0.02em;
+  font-size: 28px;
+  font-weight: 800;
+  line-height: 30.8px;
+  text-align: left;
+  color: var(--ultra-dark);
   margin-right: 12px;
 }
 
@@ -43,7 +46,11 @@
 
 .day {
   color: var(--ultra-dark);
-  font: var(--font-20-typography);
+
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 24.2px;
+  text-align: center;
 
   width: 55px;
   height: 55px;
@@ -79,7 +86,10 @@
 
 @media screen and (max-width: 1024px) {
   .day {
-    font: var(--font-p-typography);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 17.6px;
+    text-align: center;
     width: 44px;
     height: 44px;
   }

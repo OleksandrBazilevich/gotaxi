@@ -18,7 +18,7 @@ const BasicDetailsForm = () => {
         <Avatar size={128} cls={styles.avatar} variant="square" />
         <div className={styles.container}>
           <p className={styles.title}>Profile image</p>
-          <Button theme="primaryOutlined" cls={styles.btn}>
+          <Button theme="primaryOutlined" cls={styles.upload}>
             <UploadIcon />
             Upload image
           </Button>

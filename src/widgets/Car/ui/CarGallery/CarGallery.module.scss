@@ -9,11 +9,17 @@
 .text {
   width: 38%;
   h4 {
-    font: var(--font-h4-typography);
+    font-size: 28px;
+    font-weight: 800;
+    line-height: 30.8px;
+    text-align: left;
     margin-bottom: 12px;
   }
   p {
-    font: var(--font-subheading-typography);
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 25.2px;
+    text-align: left;
     color: var(--gray);
   }
 }

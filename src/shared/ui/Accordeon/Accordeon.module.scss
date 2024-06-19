@@ -14,7 +14,9 @@
 }
 
 .title {
-  font: var(--font-22-typography);
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 24.2px;
 }
 
 .description {
@@ -24,8 +26,12 @@
     padding 0.2s ease-in,
     max-height 0.2s ease-in,
     opacity 0.2s ease-in;
+
   font-size: 18px;
   font-weight: 600;
+  line-height: 25.2px;
+  text-align: left;
+
   color: var(--gray);
 
   &.show {
@@ -43,9 +49,15 @@
 
 @media screen and (max-width: 375px) {
   .title {
-    font: var(--font-20-typography);
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 22px;
+    text-align: left;
   }
   .description {
-    font: var(--font-p-typography);
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 22.4px;
+    text-align: left;
   }
 }

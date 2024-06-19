@@ -18,6 +18,7 @@ const RatingStars: FC<RatingStars> = ({
   return (
     <div className={styles.wrapper}>
       <ReactStars
+        className={styles.stars}
         onChange={onChange}
         edit={edit}
         value={rating}

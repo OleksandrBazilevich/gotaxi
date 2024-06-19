@@ -15,7 +15,12 @@
 }
 
 .title {
-  font: var(--font-p-typography);
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 15.2px;
+  text-align: left;
+
+  margin-bottom: 8px;
 
   color: var(--ultra-dark);
 }

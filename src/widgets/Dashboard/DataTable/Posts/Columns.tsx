@@ -134,6 +134,9 @@ export const columns = [
           className={styles.header}
           onClick={() => column.toggleSorting(column.getIsSorted() === "asc")}
         >
+          <div className={styles.sortContainer}>
+            <TableSortIcon className={styles.sortIcon} />
+          </div>
           <span className={styles.title}>Status</span>
         </div>
       );
@@ -212,6 +215,9 @@ export const columns = [
           className={styles.header}
           onClick={() => column.toggleSorting(column.getIsSorted() === "asc")}
         >
+          <div className={styles.sortContainer}>
+            <TableSortIcon className={styles.sortIcon} />
+          </div>
           <span className={styles.title}>Cars</span>
         </div>
       );

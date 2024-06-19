@@ -13,7 +13,12 @@
 
 .location {
   cursor: pointer;
-  font: var(--font-p-typography);
+
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 15.2px;
+  text-align: left;
+
   margin-right: 24px;
   display: flex;
   align-items: center;
@@ -58,7 +63,11 @@
 }
 
 .link {
-  font: var(--font-p-typography);
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 15.2px;
+  text-align: left;
+
   margin-right: 21px;
 
   &.active {

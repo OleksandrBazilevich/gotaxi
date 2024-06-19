@@ -30,17 +30,21 @@
   margin-top: 34px;
 
   h3 {
-    font: var(--font-h3-typography);
+    font-size: 40px;
+    font-weight: 800;
+    line-height: 44px;
+    text-align: left;
 
     margin-bottom: 11px;
   }
 
   p {
     color: var(--gray);
+
     font-size: 18px;
     font-weight: 600;
     line-height: 25.2px;
-    letter-spacing: -0.02em;
+    text-align: left;
   }
 }
 

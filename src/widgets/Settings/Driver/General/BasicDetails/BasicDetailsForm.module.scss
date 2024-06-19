@@ -17,20 +17,21 @@
 }
 
 .title {
-  font: var(--font-p-15-typography);
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 14.25px;
+  text-align: left;
 
   color: var(--ultra-dark);
   margin-bottom: 14px;
 }
 
-.btn {
+.btn,
+.upload {
   width: 192px;
   height: 43px;
   margin-bottom: 14px;
-  border: 1px solid var(--gray);
-  &:hover {
-    border-color: var(--gray);
-  }
+
   svg {
     width: 20px;
     height: 20px;
@@ -43,8 +44,18 @@
   }
 }
 
+.btn {
+  border: 1px solid var(--gray);
+  &:hover {
+    border-color: var(--gray);
+  }
+}
+
 .text {
-  font: var(--font-caption-12-typography);
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 15.6px;
+  text-align: left;
 
   color: var(--gray);
   margin-bottom: 22px;

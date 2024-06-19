@@ -1,6 +1,9 @@
 .dark,
 .primary {
-  font: var(--font-h2-typography);
+  font-size: 60px;
+  font-weight: 800;
+  line-height: 66px;
+  text-align: left;
 }
 
 .primary {
@@ -10,7 +13,11 @@
 
 .subtitle {
   color: var(--gray);
-  font: var(--font-subheading-typography);
+
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 25.2px;
+  text-align: left;
 }
 
 .wrapper {
@@ -55,9 +62,15 @@
   }
   .dark,
   .primary {
-    font: var(--font-h3-typography);
+    font-size: 40px;
+    font-weight: 800;
+    line-height: 44px;
+    text-align: left;
   }
   .subtitle {
-    font: var(--font-p-typography);
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 22.4px;
+    text-align: left;
   }
 }

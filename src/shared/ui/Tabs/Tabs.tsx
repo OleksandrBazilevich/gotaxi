@@ -29,7 +29,11 @@ const Tabs: FC<PropsWithChildren<ITabsProps>> = ({ children, cls = "" }) => {
           return (
             <Button
               theme={index === activeTab ? "inverted" : "outlined"}
-              cls={classNames(styles.tab, {}, [])}
+              cls={classNames(
+                styles.tab,
+                { [styles.active]: index === activeTab },
+                []
+              )}
               onClick={() => handleTabClick(index)}
             >
               {Icon && <Icon className={styles.tabIcon} />}

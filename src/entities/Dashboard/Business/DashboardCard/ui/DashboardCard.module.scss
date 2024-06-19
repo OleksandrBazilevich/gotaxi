@@ -30,13 +30,19 @@
 }
 
 .title {
-  font: var(--font-p-typography);
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 20.8px;
+  text-align: left;
 
   color: var(--gray);
 }
 
 .total {
-  font: var(--font-h4-typography);
+  font-size: 28px;
+  font-weight: 800;
+  line-height: 30.8px;
+  text-align: left;
   display: flex;
   align-items: start;
 }
@@ -56,10 +62,12 @@
   display: flex;
   align-items: center;
   margin-left: 8px;
+
   font-size: 14px;
   font-weight: 600;
   line-height: 19.6px;
-  letter-spacing: -0.02em;
+  text-align: left;
+
   color: var(--positive);
 
   &.falling {

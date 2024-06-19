@@ -1,5 +1,9 @@
 .title {
-  font: var(--font-h3-typography);
+
+  font-size: 40px;
+  font-weight: 800;
+  line-height: 44px;
+  text-align: left;
 
   margin: 30px 0px;
 }
@@ -32,7 +36,11 @@
   margin: 9px 0px;
   height: 30px;
 
-  font: var(--font-p-typography);
+
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 15.2px;
+  text-align: left;
 
   align-items: center;
   color: var(--ultra-dark);

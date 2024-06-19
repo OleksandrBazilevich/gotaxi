@@ -1,5 +1,8 @@
 .title {
-  font: var(--font-20-typography);
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 24.2px;
+  text-align: left;
 
   margin-bottom: 17px;
 }
@@ -8,7 +11,11 @@
   position: absolute;
   top: calc(100% - 15px);
   transform: translateX(-50%);
-  font: var(--font-p-typography);
+
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 15.2px;
+  text-align: center;
 }
 
 .container {
@@ -17,7 +24,10 @@
 }
 
 .values {
-  font: var(--font-p-typography);
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 15.2px;
+  text-align: left;
 
   color: var(--gray);
   width: 100%;

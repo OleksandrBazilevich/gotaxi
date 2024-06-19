@@ -6,7 +6,6 @@
   margin-top: 36px;
 }
 
-
 .container {
   display: flex;
   justify-content: space-between;
@@ -20,8 +19,11 @@
   align-items: center;
 
   div {
-    font-weight: 500;
     font-size: 13px;
+    font-weight: 500;
+    line-height: 12.35px;
+    text-align: left;
+
     color: var(--gray);
     margin-top: 9px;
   }

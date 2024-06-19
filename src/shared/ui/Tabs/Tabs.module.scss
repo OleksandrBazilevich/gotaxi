@@ -12,6 +12,10 @@
   height: 43px;
   border: 1px solid var(--light);
 
+  &.active:hover {
+    color: var(--white);
+  }
+
   &:hover {
     border-color: var(--ultra-dark);
     color: var(--ultra-dark);

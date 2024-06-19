@@ -30,19 +30,29 @@
 }
 
 .name {
-  font: var(--font-p-typography);
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 20.8px;
+  text-align: left;
 
   color: var(--gray);
 }
 
 .title {
-  font: var(--font-20-typography);
+
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 24.2px;
+  text-align: left;
 
   margin-bottom: 8px;
 }
 
 .description {
-  font: var(--font-caption-12-typography);
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 11.4px;
+  text-align: left;
   color: var(--warning);
 }
 

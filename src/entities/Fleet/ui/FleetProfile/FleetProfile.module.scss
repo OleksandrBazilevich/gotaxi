@@ -4,10 +4,22 @@
 
 .container {
   margin-left: 13px;
+
+  &:hover {
+    .name {
+      color: var(--gray);
+    }
+  }
 }
 
 .name {
+  cursor: pointer;
+
+  font-size: 16px;
   font-weight: 600;
+  line-height: 15.2px;
+  text-align: left;
+
   color: var(--ultra-dark);
   margin-bottom: 5px;
   display: flex;
@@ -16,7 +28,11 @@
 
 .rating {
   color: var(--dark-gray);
-  font: var(--font-p-typography);
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 15.2px;
+  text-align: left;
+
   margin-left: 8px;
 }
 

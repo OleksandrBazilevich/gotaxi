@@ -9,7 +9,11 @@
 }
 
 .title {
-  font: var(--font-p-15-typography);
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 14.25px;
+  text-align: left;
+
   color: var(--ultra-dark);
 }
 
@@ -21,7 +25,6 @@
   font-size: 14px;
   font-weight: 600;
   line-height: 13.3px;
-  letter-spacing: -0.02em;
   color: var(--gray);
   margin: 20px 0px 10px;
 }

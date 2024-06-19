@@ -22,14 +22,21 @@
 }
 
 .title {
+  font-size: 40px;
   font-weight: 800;
-  font-size: 44px;
+  line-height: 44px;
+  text-align: left;
+  margin-bottom: 16px;
 }
 
 .text {
   color: var(--gray);
+
+  font-size: 18px;
   font-weight: 600;
-  margin-top: 16px;
+  line-height: 25.2px;
+  text-align: left;
+
   margin-bottom: 36px;
 }
 

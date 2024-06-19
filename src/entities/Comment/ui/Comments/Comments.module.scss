@@ -15,8 +15,11 @@
 }
 
 .title {
-  font: var(--font-h4-typography);
-  line-height: 30px;
+  font-size: 28px;
+  font-weight: 800;
+  line-height: 30.8px;
+  text-align: left;
+  margin-bottom: 12px;
 }
 
 .wrapper {
@@ -25,10 +28,12 @@
 }
 
 .total {
-  margin-left: 8px;
+  font-size: 16px;
   font-weight: 600;
+  line-height: 15.2px;
+  text-align: left;
+  margin-left: 8px;
   color: var(--dark-gray);
-  margin-bottom: -3px;
 }
 
 @media screen and (max-width: 375px) {

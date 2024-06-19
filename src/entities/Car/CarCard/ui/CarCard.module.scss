@@ -12,7 +12,11 @@
 
 .location {
   cursor: pointer;
-  font: var(--font-p-typography);
+
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 15.2px;
+  text-align: left;
   color: var(--ultra-dark);
   display: flex;
   align-items: center;
@@ -44,7 +48,10 @@
 }
 
 .name {
-  font: var(--font-h4-typography);
+  font-size: 28px;
+  font-weight: 800;
+  line-height: 30.8px;
+  text-align: left;
 }
 
 .year {
@@ -54,8 +61,12 @@
 
 .description {
   margin-top: 10px;
-  font-weight: 700;
   color: var(--gray);
+
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 14.25px;
+  text-align: left;
 
   span {
     margin-right: 4px;
@@ -70,10 +81,11 @@
   display: flex;
   justify-content: space-between;
   margin-bottom: 12px;
-  font-weight: 600;
+
   font-size: 18px;
-  line-height: 25px;
-  letter-spacing: -2%;
+  font-weight: 600;
+  line-height: 25.2px;
+  text-align: left;
 
   div {
     color: var(--gray);
@@ -97,9 +109,6 @@
 @media screen and (max-width: 1024px) {
   .card {
     padding: 20px, 0px, 16px, 0px;
-  }
-  .name {
-    font: var(--font-20-typography);
   }
 }
 

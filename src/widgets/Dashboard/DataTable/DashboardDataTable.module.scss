@@ -2,8 +2,6 @@
   font-size: 14px;
   font-weight: 600;
   line-height: 15.4px;
-  letter-spacing: -0.02em;
-
   display: flex;
   align-items: center;
 }
@@ -23,10 +21,12 @@
   display: flex;
   align-items: center;
   margin-left: 6px;
+
   font-size: 14px;
   font-weight: 600;
   line-height: 19.6px;
-  letter-spacing: -0.02em;
+  text-align: left;
+
   color: var(--positive);
 
   &.falling {
@@ -45,7 +45,11 @@
 .header {
   cursor: pointer;
   color: var(--gray);
-  font: var(--font-p-typography);
+
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 20.8px;
+  text-align: left;
 
   display: flex;
   align-items: center;
@@ -81,15 +85,20 @@
   justify-content: space-between;
 
   h4 {
-    
     font-size: 14px;
     font-weight: 600;
     line-height: 18.2px;
+    text-align: left;
+
     color: var(--ultra-dark);
   }
 
   p {
-    font: var(--font-caption-12-typography);
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 15.6px;
+    text-align: left;
+
     color: var(--gray);
   }
 }
@@ -98,7 +107,7 @@
   font-size: 14px;
   font-weight: 600;
   line-height: 15.4px;
-  letter-spacing: -0.02em;
+  text-align: left;
 }
 
 .actions {

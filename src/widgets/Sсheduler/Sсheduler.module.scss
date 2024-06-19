@@ -18,6 +18,10 @@
   width: 100%;
   align-items: center;
   margin-bottom: 21px;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 24.2px;
+  text-align: left;
 }
 
 .currentMonth,
@@ -27,8 +31,6 @@
 }
 
 .nextMonth {
-  font: var(--font-22-typography);
-
   text-align: right;
   color: var(--gray);
 }
@@ -92,7 +94,11 @@
   width: 100%;
   height: 100%;
   border-radius: 3px;
-  font: var(--font-p-15-typography);
+
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 14.25px;
+  text-align: left;
   color: var(--ultra-dark);
   padding: 8px 12px;
   display: flex;
@@ -101,6 +107,11 @@
 }
 
 .eventTitle {
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 14.25px;
+  text-align: left;
+
   width: 70%;
   white-space: nowrap;
   overflow: hidden;
@@ -109,7 +120,10 @@
 }
 
 .eventTime {
-  font: var(--font-p-15-typography);
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 14.25px;
+  text-align: right;
 }
 
 .headerCell {
@@ -137,13 +151,16 @@
   }
 }
 .headerCellTitle {
-  font: var(--font-20-typography);
-
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 22px;
   margin-bottom: 4px;
 }
 
 .headerCellText {
-  font: var(--font-p-15-typography);
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 14.25px;
 }
 
 .icon {
@@ -163,8 +180,6 @@
 }
 
 .title {
-  font: var(--font-22-typography);
-
   margin-right: 12px;
   color: var(--ultra-dark);
 }

@@ -15,7 +15,10 @@
 }
 
 .header {
-  font: var(--font-p-typography);
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 13.3px;
+  text-align: left;
 
   color: var(--ultra-dark);
   display: flex;
@@ -47,19 +50,24 @@
 }
 
 .name {
-  font: var(--font-22-typography);
+  font-size: 22px;
+  font-weight: 800;
+  line-height: 24.2px;
+  text-align: left;
 }
 
 .year {
-  font: var(--font-20-typography);
-
   margin-left: 8px;
   color: var(--light);
 }
 
 .description {
   margin-top: 10px;
-  font-weight: 700;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 19.6px;
+  text-align: left;
+
   color: var(--gray);
 
   span {
@@ -78,8 +86,6 @@
   font-size: 14px;
   font-weight: 600;
   line-height: 19.6px;
-  letter-spacing: -0.02em;
-
   div {
     color: var(--gray);
   }
@@ -101,7 +107,10 @@
     justify-content: space-between;
   }
   .name {
-    font: var(--font-20-typography);
+    font-size: 22px;
+    font-weight: 800;
+    line-height: 24.2px;
+    text-align: left;
   }
   .body {
     width: 70%;

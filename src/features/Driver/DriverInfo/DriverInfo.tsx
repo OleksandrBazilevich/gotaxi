@@ -55,6 +55,7 @@ const DriverInfo = () => {
             avatarSize={width < 1024 ? 43 : 79}
             surname="Karu"
             showSurname={false}
+            cls={styles.driver}
           />
           <Button cls={styles.viewLicense} theme="primaryOutlined">
             View driver license
