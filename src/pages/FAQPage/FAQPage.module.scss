@@ -58,11 +58,22 @@
   }
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 670px) {
   .faq {
     grid-template-columns: repeat(1, 1fr);
     gap: 16px;
   }
+
+  .container {
+    flex-direction: column;
+    .img {
+      width: 100%;
+      margin-top: 50px;
+    }
+  }
+}
+
+@media screen and (max-width: 375px) {
   .wrapper {
     padding: 40px 16px;
   }
@@ -72,13 +83,5 @@
     font-weight: 800;
     line-height: 44px;
     text-align: left;
-  }
-
-  .container {
-    flex-direction: column;
-    .img {
-      width: 100%;
-      margin-top: 50px;
-    }
   }
 }

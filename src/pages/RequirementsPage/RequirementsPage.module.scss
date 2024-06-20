@@ -148,6 +148,21 @@
   }
 }
 
+@media screen and (max-width: 910px) {
+  .container {
+    flex-direction: column;
+    .img {
+      width: 100%;
+      margin-top: 50px;
+    }
+  }
+
+  .steps {
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+}
+
 @media screen and (max-width: 375px) {
   .wrapper {
     padding: 40px 16px;
@@ -159,18 +174,9 @@
     line-height: 44px;
     text-align: left;
   }
-
-  .container {
-    flex-direction: column;
-    .img {
-      width: 100%;
-      margin-top: 50px;
-    }
-  }
   .steps {
-    margin: 140px 0;
-    padding: 0;
-    border-left: none;
+    margin-top: 30px;
+    margin-bottom: 30px;
   }
 
   .step {

@@ -1,5 +1,6 @@
 .card {
   width: 100%;
+  min-width: 300px;
   background: var(--white);
   border-radius: 20px;
   padding: 20px 20px 32px 20px;
@@ -108,12 +109,21 @@
 
 @media screen and (max-width: 1024px) {
   .card {
-    padding: 20px, 0px, 16px, 0px;
+    padding: 20px 12px 16px 12px;
+  }
+  .name {
+    font-size: 22px;
+    line-height: 24.2px;
   }
 }
 
 @media screen and (max-width: 375px) {
   .card {
     width: 100%;
+  }
+
+  .name {
+    font-size: 28px;
+    line-height: 30.8px;
   }
 }

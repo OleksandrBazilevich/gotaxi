@@ -1,6 +1,7 @@
 import { AuthField } from "../../../../features/Auth/ui/AuthField/AuthField";
 import { useForm } from "../../../../shared/lib/useForm";
 import { Button } from "../../../../shared/ui/Button";
+import styles from "./ContactUs.module.scss";
 
 interface FormData {
   name: string;
@@ -25,7 +26,7 @@ const ContactUsForm = () => {
   };
 
   return (
-    <form onSubmit={handleSubmit(onSubmit)}>
+    <form className={styles.form} onSubmit={handleSubmit(onSubmit)}>
       <AuthField
         errors={errors}
         type="text"

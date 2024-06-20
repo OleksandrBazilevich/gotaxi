@@ -22,7 +22,6 @@
   border-bottom: 1px solid var(--light);
 
   h3 {
-
     font-size: 22px;
     font-weight: 700;
     line-height: 24.2px;
@@ -38,7 +37,7 @@
   padding-left: 0px !important;
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 600px) {
   .btn {
     width: 50%;
   }

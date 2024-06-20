@@ -31,9 +31,14 @@
   min-height: 800px;
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 600px) {
   .tabList {
-    display: none;
+    display: flex;
+    flex-direction: column;
+  }
+  .tab {
+    width: 100% !important;
+    margin-bottom: 12px;
   }
 }
 

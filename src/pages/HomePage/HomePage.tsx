@@ -287,14 +287,14 @@ const HomePage = () => {
       </div>
       <CarGallery cars={CarsData} />
       <ContactUs />
-      <Wrapper>
+      <div className={styles.wrapper}>
         <FAQ
           title="FAQ"
           description="We’ve collected the answers for the most common and popular questions
           from our drivers."
           questions={accordeonData}
         />
-      </Wrapper>
+      </div>
     </>
   );
 };

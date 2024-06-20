@@ -1,8 +1,10 @@
 .wrapper {
-  margin: 120px 300px 0 300px;
+  margin: 0px 300px 0 300px;
 }
 
 .carsGallery {
+  margin-top: 50px;
+  padding: 50px 0px;
   background: var(--ultra-light);
 }
 
@@ -50,23 +52,47 @@
 
 @media screen and (max-width: 1440px) {
   .wrapper {
-    margin: 120px 60px 0 60px;
+    margin: 0px 60px 0 60px;
   }
 }
 
 @media screen and (max-width: 1024px) {
   .wrapper {
-    margin: 200px 50px 0 50px;
+    margin: 0px 50px 0 50px;
   }
   .gallery {
     gap: 16px;
   }
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 600px) {
   .header {
     flex-direction: column;
+    margin-bottom: 18px;
+    padding-top: 25px;
   }
+
+  .text {
+    width: 100%;
+    h4 {
+      font-size: 26px;
+      font-weight: 800;
+      text-align: left;
+    }
+    p {
+      font-size: 16px;
+      line-height: 22.5px;
+    }
+  }
+
+  .buttonContainer {
+    justify-content: space-between;
+    margin-bottom: 18px;
+    margin-top: 32px;
+  }
+}
+
+@media screen and (max-width: 375px) {
   .gallery {
     grid-template-columns: repeat(1, 1fr);
     row-gap: 24px;
@@ -77,17 +103,7 @@
     width: 100%;
   }
 
-  .buttonContainer {
-    justify-content: space-between;
-    margin-bottom: 18px;
-    margin-top: 32px;
-  }
-
-  .text {
-    width: 100%;
-  }
-
   .wrapper {
-    margin: 96px 16px 0 16px;
+    margin: 0px 16px 0 16px;
   }
 }

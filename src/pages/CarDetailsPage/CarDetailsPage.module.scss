@@ -86,9 +86,12 @@
   .ListContainer {
     padding: 200px 0 0 50px;
   }
+  .gallery {
+    width: 60%;
+  }
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 870px) {
   .ListContainer {
     margin-top: 45px;
     padding: 30px 0 0 16px;
@@ -103,8 +106,7 @@
   .gallery {
     border-radius: none;
     margin-right: 0px;
-    position: absolute;
     margin-left: -16px;
-    width: 100%;
+    width: calc(100% + 32px);
   }
 }

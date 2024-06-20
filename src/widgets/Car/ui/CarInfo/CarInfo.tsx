@@ -30,7 +30,7 @@ const CarInfo: FC<ICarInfo> = (props) => {
   return (
     <div className={styles.profile}>
       <FleetProfile name="Warsaw Car Fleet" rating={4} />
-      {width > 375 && <Hr />}
+      {width > 375 && <Hr cls={styles.hr} />}
 
       <CarCardHeader
         name="Kia Optima"

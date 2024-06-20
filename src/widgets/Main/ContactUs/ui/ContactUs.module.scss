@@ -71,10 +71,20 @@
 
 @media screen and (max-width: 1024px) {
   .contactUs {
-    justify-content: space-between;
+    flex-direction: column-reverse;
+    top: 0;
     left: 0;
     border-radius: 0;
-    margin: 47px 0;
+    margin: 47px 0px 0px;
+    padding-bottom: 0;
+  }
+
+  .container {
+    max-width: 100%;
+  }
+
+  .content {
+    width: 100%;
   }
 
   .img {
@@ -85,6 +95,10 @@
     max-width: 100%;
     height: auto;
     display: block;
+  }
+
+  .form {
+    margin-bottom: 16px;
   }
 
   .contactUs {
@@ -135,7 +149,13 @@
   }
 
   .title {
-    font-size: 48px;
+    font-size: 36px;
+    line-height: 39.6px;
+  }
+
+  .text {
+    font-size: 16px;
+    line-height: 22.4px;
   }
 
   .content {

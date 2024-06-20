@@ -34,7 +34,6 @@
   font-size: 60px;
   font-weight: 800;
   line-height: 66px;
-  text-align: left;
 
   margin-bottom: 16px;
 }
@@ -45,7 +44,6 @@
   font-size: 18px;
   font-weight: 600;
   line-height: 25.2px;
-  text-align: left;
 }
 
 .wrapper {
@@ -93,8 +91,15 @@
     margin: 47px 0;
   }
 
+  .title {
+    font-size: 48px;
+    font-weight: 800;
+    line-height: 52.8px;
+  }
+
   .contentContainer {
     max-width: unset;
+    margin-bottom: 26px;
   }
 
   .img {
@@ -109,6 +114,8 @@
 
   .content {
     text-align: center;
+
+    text-align: center;
     width: 100%;
   }
 
@@ -119,12 +126,23 @@
   }
 }
 
+@media screen and (max-width: 600px) {
+  .banner {
+    padding: 82px 30px;
+  }
+}
+
 @media screen and (max-width: 375px) {
+  .contentContainer {
+    max-width: unset;
+    margin-bottom: 60px;
+  }
+
   .header {
     height: 40px;
   }
   .banner {
-    padding: 41px 21px;
+    padding: 41px 21px 0px;
     height: 792px;
     left: 0;
     border-radius: 0;

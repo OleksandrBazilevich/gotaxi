@@ -33,12 +33,22 @@
   width: 100%;
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 1024px) {
+  .hr {
+    margin: 14px 0px;
+  }
+
+  .profile {
+    width: 35%;
+  }
+}
+
+@media screen and (max-width: 870px) {
   .wrapper {
     margin-bottom: 16px;
   }
   .profile {
-    margin-top: 320px;
+    margin-top: 34px;
     width: 100%;
   }
   .container {

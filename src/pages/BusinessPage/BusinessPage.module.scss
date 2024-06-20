@@ -207,13 +207,10 @@
   }
 
   .bannerItem {
-    margin-right: 30px;
-
     h3 {
       font-size: 40px;
       font-weight: 800;
       line-height: 44px;
-      text-align: left;
     }
 
     p {
@@ -268,8 +265,7 @@
     }
   }
 }
-
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 910px) {
   .wrapper {
     display: flex;
     flex-direction: column;
@@ -277,58 +273,25 @@
   .imgContainer {
     width: 100%;
   }
-  .title {
-    font-size: 36px;
-    line-height: 39px;
-  }
-  .btn {
-    width: 166px;
-    margin-top: 36px;
-    margin-bottom: 44px;
+  .mainWrapper {
+    margin-top: 30px;
   }
 
   .container {
     max-width: none;
-  }
-  .mainWrapper {
-    margin-top: 30px;
+    margin-bottom: 70px;
   }
 
   .banner {
     padding: 19px 27px;
     margin-top: 44px;
-    justify-content: center;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    text-align: center;
   }
 
   .bannerItem {
-    text-align: center;
-    margin-right: 0px;
     margin-bottom: 30px;
-
-    h3 {
-      font-size: 40px;
-      font-weight: 800;
-      line-height: 44px;
-      text-align: center;
-    }
-
-    p {
-      margin-top: 8px;
-    }
-  }
-
-  .whyItemsWrapper {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .whyImg {
-    width: 100%;
-    margin-left: 0px;
-    img {
-      margin-left: 0px;
-    }
   }
 
   .profitWrapper {
@@ -347,7 +310,6 @@
     padding: 46px 16px 0px;
 
     h2 {
-
       font-size: 40px;
       font-weight: 800;
       line-height: 44px;
@@ -369,6 +331,70 @@
   .profitBtn {
     width: 100%;
     margin-bottom: 104px;
+  }
+}
+
+@media screen and (max-width: 680px) {
+  .banner {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .whyItemsWrapper {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .whyImg {
+    margin-left: 0px;
+    img {
+      margin-left: 0px;
+    }
+  }
+}
+@media screen and (max-width: 375px) {
+  .title {
+    font-size: 36px;
+    line-height: 39px;
+  }
+  .btn {
+    width: 166px;
+    margin-top: 36px;
+    margin-bottom: 44px;
+  }
+
+  .banner {
+    padding: 19px 27px;
+    margin-top: 44px;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .bannerItem {
+    text-align: center;
+    margin-right: 0px;
+    margin-bottom: 30px;
+
+    h3 {
+      font-size: 40px;
+      font-weight: 800;
+      line-height: 44px;
+    }
+
+    p {
+      margin-top: 8px;
+    }
+  }
+
+  .whyItemsWrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .whyImg {
+    width: 100%;
+    margin-left: 0px;
+    img {
+      margin-left: 0px;
+    }
   }
 
   .contactUs {
