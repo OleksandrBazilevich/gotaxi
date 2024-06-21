@@ -14,6 +14,12 @@
   }
 }
 
+@media screen and (max-width: 550px) {
+  .wrapper {
+    padding-bottom: 80px;
+  }
+}
+
 @media screen and (max-width: 375px) {
   .wrapper {
     padding: 45px 16px;
