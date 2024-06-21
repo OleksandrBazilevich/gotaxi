@@ -85,6 +85,7 @@ const ReservationCalendar: FC<IReservationCalendarProps> = ({
       fromYear={2024}
       selected={selected}
       onSelect={handleSelect}
+      className={styles.calendar}
       classNames={{ row: styles.row }}
       onMonthChange={(month) => setMonth(month)}
       styles={{ day: { display: "flex", alignItems: "center" } }}

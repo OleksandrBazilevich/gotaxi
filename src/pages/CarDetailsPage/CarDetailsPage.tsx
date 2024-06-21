@@ -249,7 +249,7 @@ const CarDetailsPage = () => {
   return (
     <div>
       <Wrapper cls={styles.wrapper}>
-        {width > 375 && (
+        {width > 870 && (
           <AppLink cls={styles.link} theme="gray" to={"/"}>
             <LeftIcon className={styles.icon} /> Back
           </AppLink>
