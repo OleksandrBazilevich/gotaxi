@@ -22,7 +22,7 @@ const DashboardLayout: FC<PropsWithChildren> = ({ children }) => {
   const isDriver = pathname.includes("driver");
   const navigate = useNavigate();
 
-  return width < 375 ? (
+  return width < 550 ? (
     <div className={styles.mobileLayout}>
       <div className={styles.header}>
         <LogoIcon className={styles.logo} />
