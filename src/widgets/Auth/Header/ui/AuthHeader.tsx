@@ -1,8 +1,9 @@
+import { FC } from "react";
 import { LogoIcon } from "../../../../shared/assets/icons";
 import { Button } from "../../../../shared/ui/Button";
 import styles from "./AuthHeader.module.scss";
 
-const AuthHeader = () => {
+const AuthHeader:FC = () => {
   return (
     <header className={styles.header}>
       <div className={styles.logo}>

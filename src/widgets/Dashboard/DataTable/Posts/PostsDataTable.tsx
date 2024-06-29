@@ -6,7 +6,7 @@ import {
   ColumnFiltersState,
   getFilteredRowModel
 } from "@tanstack/react-table";
-import { useState } from "react";
+import { FC, useState } from "react";
 import { Field } from "../../../../shared/ui/Field";
 import Table from "../../../../shared/ui/Table/Table";
 import { columns, defaultData } from "./Columns";
@@ -17,11 +17,12 @@ import {
   SearchIcon
 } from "../../../../shared/assets/icons";
 import { Button } from "../../../../shared/ui/Button";
-import FilterDropDown from "../../../../entities/Car/ui/FilterDropDown/FilterDropDown";
-import CreatePost from "../../../../features/Post/CreatePost/CreatePost";
-import useWindowDimensions from "../../../../shared/lib/useWindowDimensions";
 
-const PostsDataTable = () => {
+import useWindowDimensions from "../../../../shared/lib/useWindowDimensions";
+import { CreatePost } from "../../../../features/Post/CreatePost";
+import { FilterDropDown } from "../../../../entities/Car/FilterDropDown";
+
+const PostsDataTable: FC = () => {
   const { width } = useWindowDimensions();
   const [data, _setData] = useState(() => [...defaultData]);
   const [columnFilters, setColumnFilters] = useState<ColumnFiltersState>([]);

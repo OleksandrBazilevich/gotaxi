@@ -12,7 +12,6 @@ import {
 } from "../../../../shared/assets/icons";
 import { classNames } from "../../../../shared/lib";
 import { Button } from "../../../../shared/ui/Button";
-import { ICar } from "../Columns";
 import {
   addDays,
   compareAsc,
@@ -20,10 +19,11 @@ import {
   format,
   isAfter
 } from "date-fns";
-import FleetProfile from "../../../../entities/Fleet/ui/FleetProfile/FleetProfile";
-import UserProfile from "../../../../entities/User/UserProfile/UserProfile";
-import ComfirmReservation from "../../../../features/Fleet/ComfirmResevationModal/ComfirmReservation";
-import DriverInfo from "../../../../features/Driver/DriverInfo/DriverInfo";
+
+import { ICar } from "../Main/Columns";
+import { UserProfile } from "../../../../entities/User/UserProfile";
+import { DriverInfo } from "../../../../features/Driver/DriverInfo";
+import { ComfirmReservation } from "../../../../features/Fleet/ComfirmResevationModal";
 
 interface IDriver {
   name: string;

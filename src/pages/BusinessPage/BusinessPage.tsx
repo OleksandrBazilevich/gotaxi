@@ -5,13 +5,13 @@ import PersonImage from "../../shared/assets/img/person.png";
 import ContactUsImage from "../../shared/assets/img/contactUsCar2.png";
 import { CheckIcon } from "../../shared/assets/icons";
 import Slider from "../../shared/ui/Slider/Slider";
-import CarSlider from "../../features/Car/ui/CarSlider/CarSlider";
-import CarProfitCalculator from "../../widgets/Car/ui/CarProfitCalculator/CarProfitCalculator";
+
 import ProfitCarImage from "../../shared/assets/img/profitCar.png";
 import { IAccordeonData } from "../../shared/ui/Accordeon/AccordeonItem";
 import FAQ from "../../widgets/Main/FAQ/ui/FAQ";
 import PhoneImage from "../../shared/assets/img/phone.png";
-import BusinessContactUs from "../../widgets/Business/BusinessContactUs";
+import BusinessContactUs from "../../widgets/Business/ui/BusinessContactUs";
+import { CarProfitCalculator } from "../../widgets/Car";
 
 const BusinessPage = () => {
   const accordeonData: IAccordeonData[] = [

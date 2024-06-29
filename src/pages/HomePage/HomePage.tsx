@@ -9,7 +9,6 @@ import Tabs from "../../shared/ui/Tabs/Tabs";
 import Tab from "../../shared/ui/Tabs/Tab";
 import { CarIcon, MapIcon } from "../../shared/assets/icons";
 import { Button } from "../../shared/ui/Button";
-import CarGallery from "../../widgets/Car/ui/CarGallery/CarGallery";
 import ContactUs from "../../widgets/Main/ContactUs/ui/ContactUs";
 import FAQ from "../../widgets/Main/FAQ/ui/FAQ";
 import {
@@ -18,6 +17,7 @@ import {
 } from "../../shared/ui/Accordeon/AccordeonItem";
 import Accordeon from "../../shared/ui/Accordeon/Accordeon";
 import Wrapper from "../../shared/ui/Wrapper/Wrapper";
+import { CarGallery } from "../../widgets/Car";
 
 const HomePage = () => {
   const bulletData: IBulletProps[] = [

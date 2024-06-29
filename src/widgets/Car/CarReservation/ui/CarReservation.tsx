@@ -2,7 +2,7 @@ import styles from "./CarReservation.module.scss";
 import CarImage from "../../../../shared/assets/img/galleryCar.png";
 import { Field } from "../../../../shared/ui/Field";
 import { CalendarIcon } from "../../../../shared/assets/icons";
-import { ChangeEvent, useState } from "react";
+import { ChangeEvent, FC, useState } from "react";
 import Hr from "../../../../shared/ui/Hr/Hr";
 import { Button } from "../../../../shared/ui/Button";
 import { DateRange, DayPicker } from "react-day-picker";
@@ -36,7 +36,7 @@ import { useNavigate } from "react-router-dom";
 
 export type CalendarMode = "days" | "weeks" | "months";
 
-const CarReservation = () => {
+const CarReservation: FC = () => {
   const initialRange: DateRange = {
     from: addDays(new Date(), 1),
     to: addDays(new Date(), 4)

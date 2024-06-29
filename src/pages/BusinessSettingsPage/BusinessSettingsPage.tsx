@@ -1,17 +1,18 @@
 import { useLocation } from "react-router-dom";
-import DashboardWrapper from "../../widgets/Dashboard/Wrapper/DashboardWrapper";
+import DashboardWrapper from "../../widgets/Dashboard/Wrapper/ui/DashboardWrapper";
 import styles from "./BusinessSettingsPage.module.scss";
 import { parseUrlForBreadcrumbs } from "../../shared/lib/parseUrlForBreadcrumbs";
 import Breadcrumbs from "../../shared/ui/Breadcrumbs/Breadcrumbs";
 import Tabs from "../../shared/ui/Tabs/Tabs";
 import Tab from "../../shared/ui/Tabs/Tab";
-import BasicDetailsForm from "../../widgets/Settings/Business/General/BasicDetails/BasicDetailsForm";
-import AddressForm from "../../widgets/Settings/Address/AddressForm";
-import VATForm from "../../widgets/Settings/Business/General/VAT/VATForm";
-import ChangePasswordForm from "../../widgets/Settings/Security/ChangePassword/ChangePasswordForm/ChangePasswordForm";
-import ChangeContactForm from "../../widgets/Settings/Security/ChangeContact/ChangeContactForm";
-import CardDetailsForm from "../../widgets/Settings/Business/Payments/CardDetailsForm/CardDetailsForm";
-import PaymentsDataTable from "../../widgets/Settings/Business/Payments/PaymentsTable/PaymentsTable";
+
+import PaymentsDataTable from "../../widgets/Settings/Business/Payments/PaymentsTable/ui/PaymentsTable";
+import { AddressForm } from "../../widgets/Settings/Address";
+import { BasicDetailsForm } from "../../widgets/Settings/Business/General/BasicDetails";
+import { VATForm } from "../../widgets/Settings/Business/General/VAT";
+import { CardDetailsForm } from "../../widgets/Settings/Business/Payments/CardDetailsForm";
+import { ChangeContactForm } from "../../widgets/Settings/Security/ChangeContact";
+import { ChangePasswordForm } from "../../widgets/Settings/Security/ChangePassword";
 
 const BusinessSettingsPage = () => {
   const { pathname } = useLocation();

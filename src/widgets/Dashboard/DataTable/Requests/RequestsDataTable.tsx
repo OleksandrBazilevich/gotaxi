@@ -6,16 +6,16 @@ import {
   ColumnFiltersState,
   getFilteredRowModel
 } from "@tanstack/react-table";
-import { useState } from "react";
+import { FC, useState } from "react";
 import { Field } from "../../../../shared/ui/Field";
 import Table from "../../../../shared/ui/Table/Table";
 import { columns, defaultData } from "./Columns";
 import styles from "./RequestsDataTable.module.scss";
 import { FilterIcon, SearchIcon } from "../../../../shared/assets/icons";
 import { Button } from "../../../../shared/ui/Button";
-import FilterDropDown from "../../../../entities/Car/ui/FilterDropDown/FilterDropDown";
+import { FilterDropDown } from "../../../../entities/Car/FilterDropDown";
 
-const RequestsDataTable = () => {
+const RequestsDataTable: FC = () => {
   const [data, _setData] = useState(() => [...defaultData]);
   const [columnFilters, setColumnFilters] = useState<ColumnFiltersState>([]);
   const [sorting, setSorting] = useState<SortingState>([]);

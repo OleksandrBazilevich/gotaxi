@@ -4,14 +4,11 @@ import { parseUrlForBreadcrumbs } from "../../shared/lib/parseUrlForBreadcrumbs"
 import Breadcrumbs from "../../shared/ui/Breadcrumbs/Breadcrumbs";
 import Tab from "../../shared/ui/Tabs/Tab";
 import Tabs from "../../shared/ui/Tabs/Tabs";
-import AddressForm from "../../widgets/Settings/Address/AddressForm";
-import VATForm from "../../widgets/Settings/Business/General/VAT/VATForm";
-import CardDetailsForm from "../../widgets/Settings/Business/Payments/CardDetailsForm/CardDetailsForm";
-import PaymentsDataTable from "../../widgets/Settings/Business/Payments/PaymentsTable/PaymentsTable";
-import ChangeContactForm from "../../widgets/Settings/Security/ChangeContact/ChangeContactForm";
-import ChangePasswordForm from "../../widgets/Settings/Security/ChangePassword/ChangePasswordForm/ChangePasswordForm";
-import BasicDetailsForm from "../../widgets/Settings/Driver/General/BasicDetails/BasicDetailsForm";
-import DriverLicenseForm from "../../widgets/Settings/Driver/General/DriverLicense/DriverLicenseForm";
+import { AddressForm } from "../../widgets/Settings/Address";
+import { BasicDetailsForm } from "../../widgets/Settings/Business/General/BasicDetails";
+import { DriverLicenseForm } from "../../widgets/Settings/Driver/General/DriverLicense";
+import { ChangeContactForm } from "../../widgets/Settings/Security/ChangeContact";
+import { ChangePasswordForm } from "../../widgets/Settings/Security/ChangePassword";
 
 const DriverSettingsPage = () => {
   const { pathname } = useLocation();

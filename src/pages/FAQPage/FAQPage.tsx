@@ -2,7 +2,7 @@ import styles from "./FAQPage.module.scss";
 import CarImg from "../../shared/assets/img/car2.png";
 import FAQ from "../../widgets/Main/FAQ/ui/FAQ";
 import { IAccordeonData } from "../../shared/ui/Accordeon/AccordeonItem";
-import BusinessContactUs from "../../widgets/Business/BusinessContactUs";
+import BusinessContactUs from "../../widgets/Business/ui/BusinessContactUs";
 
 const accordeonData: IAccordeonData[] = [
   {

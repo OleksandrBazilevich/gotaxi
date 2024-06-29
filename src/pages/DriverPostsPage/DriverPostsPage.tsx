@@ -1,16 +1,16 @@
 import { useLocation } from "react-router-dom";
 import Breadcrumbs from "../../shared/ui/Breadcrumbs/Breadcrumbs";
-import DashboardWrapper from "../../widgets/Dashboard/Wrapper/DashboardWrapper";
+import DashboardWrapper from "../../widgets/Dashboard/Wrapper/ui/DashboardWrapper";
 import styles from "./DriverPostsPage.module.scss";
 import { parseUrlForBreadcrumbs } from "../../shared/lib/parseUrlForBreadcrumbs";
 import { Field } from "../../shared/ui/Field";
 import { GalleryIcon, SearchIcon, TableIcon } from "../../shared/assets/icons";
-import FilterDropDown from "../../entities/Car/ui/FilterDropDown/FilterDropDown";
 import { Button } from "../../shared/ui/Button";
 import { ChangeEvent, useState } from "react";
-import { IDriverPostsGalleryItem } from "../../widgets/DriverDashboard/DriverPostsGallery/DriverPostsGalleryItem/DriverPostsGalleryItem";
-import DriverPostsGallery from "../../widgets/DriverDashboard/DriverPostsGallery/DriverPostsGallery";
-import DriverPostsDataTable from "../../widgets/DriverDashboard/DataTables/DriverPostsDataTable/DriverPostsDataTable";
+import DriverPostsGallery from "../../widgets/DriverDashboard/DriverPostsGallery/ui/DriverPostsGallery";
+import { IDriverPostsGalleryItem } from "../../widgets/DriverDashboard/DriverPostsGallery/ui/DriverPostsGalleryItem/DriverPostsGalleryItem";
+import { DriverPostsDataTable } from "../../widgets/DriverDashboard/DataTables";
+import { FilterDropDown } from "../../entities/Car/FilterDropDown";
 
 const CarsData: IDriverPostsGalleryItem[] = [
   {

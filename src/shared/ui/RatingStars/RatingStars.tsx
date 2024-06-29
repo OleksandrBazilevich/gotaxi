@@ -2,14 +2,14 @@ import { FC } from "react";
 import ReactStars from "react-stars";
 import styles from "./RatingStars.module.scss";
 
-interface RatingStars {
+interface IRatingStars {
   rating: number;
   size?: number | undefined;
   edit?: boolean | undefined;
   onChange?: ((new_rating: number) => void) | undefined;
 }
 
-const RatingStars: FC<RatingStars> = ({
+const RatingStars: FC<IRatingStars> = ({
   edit = false,
   onChange,
   size = 18,

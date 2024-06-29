@@ -1,14 +1,13 @@
 import { RouteProps } from "react-router-dom";
 import ProtectedRoutes from "./ProtectedRoutes";
 import { LoginPage } from "../../../pages/LoginPage";
-import AuthLayout from "../../../widgets/Auth/Layout/AuthLayout";
 import { RegisterPage } from "../../../pages/RegisterPage";
 import { FleetRegisterPage } from "../../../pages/FleetRegisterPage";
 import { HomePage } from "../../../pages/HomePage";
-import MainLayout from "../../../widgets/Main/Layout/ui/MainLayout";
+import MainLayout from "../../../widgets/Main/Layout/MainLayout/ui/MainLayout";
 import CarDetailsPage from "../../../pages/CarDetailsPage/CarDetailsPage";
 import BusinessPage from "../../../pages/BusinessPage/BusinessPage";
-import DashboardLayout from "../../../widgets/Dashboard/Layout/DashboardLayout";
+import DashboardLayout from "../../../widgets/Dashboard/Layout/ui/DashboardLayout";
 import BusinessDashboardPage from "../../../pages/BusinessDashboardPage/BusinessDashboardPage";
 import RequestsPage from "../../../pages/RequestsPage/RequestsPage";
 import PostsPage from "../../../pages/PostsPage/PostsPage";
@@ -22,6 +21,7 @@ import UserAgreementPage from "../../../pages/UserAgreementPage/UserAgreementPag
 import PrivacyPolicyPage from "../../../pages/PrivacyPolicyPage/PrivacyPolicyPage";
 import FAQPage from "../../../pages/FAQPage/FAQPage";
 import RequirementsPage from "../../../pages/RequirementsPage/RequirementsPage";
+import { AuthLayout } from "../../../widgets/Auth";
 
 enum Routes {
   HOME = "home",

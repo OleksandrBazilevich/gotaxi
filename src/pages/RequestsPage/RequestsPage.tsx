@@ -1,6 +1,6 @@
 import { useLocation } from "react-router-dom";
 import { parseUrlForBreadcrumbs } from "../../shared/lib/parseUrlForBreadcrumbs";
-import DashboardWrapper from "../../widgets/Dashboard/Wrapper/DashboardWrapper";
+import DashboardWrapper from "../../widgets/Dashboard/Wrapper/ui/DashboardWrapper";
 import Breadcrumbs from "../../shared/ui/Breadcrumbs/Breadcrumbs";
 import styles from "./RequestsPage.module.scss";
 import RequestsDataTable from "../../widgets/Dashboard/DataTable/Requests/RequestsDataTable";

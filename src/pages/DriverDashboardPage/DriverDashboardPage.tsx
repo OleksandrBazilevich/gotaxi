@@ -1,15 +1,16 @@
 import { useLocation } from "react-router-dom";
-import DashboardWrapper from "../../widgets/Dashboard/Wrapper/DashboardWrapper";
+import DashboardWrapper from "../../widgets/Dashboard/Wrapper/ui/DashboardWrapper";
 import styles from "./DriverDashboardPage.module.scss";
 import { parseUrlForBreadcrumbs } from "../../shared/lib/parseUrlForBreadcrumbs";
 import Breadcrumbs from "../../shared/ui/Breadcrumbs/Breadcrumbs";
-import DriverDashboardCard, {
-  IDriverDashboardCardProps
-} from "../../entities/Dashboard/DriverDashboardCard/DriverDashboardCard";
-import DriverDashboardDataTable from "../../widgets/DriverDashboard/DataTables/DriverDashboardDataTable/DriverDashboardDataTable";
-import CurrentReservation from "../../entities/Car/CurrentReservation/CurrentReservation";
+
 import { addMonths } from "date-fns";
 import { useState } from "react";
+import DriverDashboardCard, {
+  IDriverDashboardCardProps
+} from "../../entities/Dashboard/DriverDashboardCard/ui/DriverDashboardCard";
+import { CurrentReservation } from "../../entities/Car/CurrentReservation";
+import { DriverDashboardDataTable } from "../../widgets/DriverDashboard/DataTables";
 
 const DriverDashboardPage = () => {
   const [isShowing, setIsShowing] = useState(false);

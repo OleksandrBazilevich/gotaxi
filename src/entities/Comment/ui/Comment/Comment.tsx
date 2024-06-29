@@ -1,11 +1,7 @@
 import { FC, useState } from "react";
 import { classNames } from "../../../../shared/lib";
 import styles from "./Comment.module.scss";
-import Avatar from "../../../../shared/ui/Avatar/Avatar";
-import { replaceSurnameWithAsterisks } from "../../lib/ReplaceSurnameWithAsterisks";
-import ReactStars from "react-stars";
-import RatingStars from "../../../../shared/ui/RatingStars/RatingStars";
-import UserProfile from "../../../User/UserProfile/UserProfile";
+import { UserProfile } from "../../../User/UserProfile";
 
 export interface ICommentProps {
   rating: number;

@@ -3,10 +3,10 @@ import DashboardCard, {
   IDashboardCardProps
 } from "../../entities/Dashboard/Business/DashboardCard/ui/DashboardCard";
 import Breadcrumbs from "../../shared/ui/Breadcrumbs/Breadcrumbs";
-import DashboardWrapper from "../../widgets/Dashboard/Wrapper/DashboardWrapper";
+import DashboardWrapper from "../../widgets/Dashboard/Wrapper/ui/DashboardWrapper";
 import styles from "./BusinessDashboardPage.module.scss";
 import { parseUrlForBreadcrumbs } from "../../shared/lib/parseUrlForBreadcrumbs";
-import DashboardDataTable from "../../widgets/Dashboard/DataTable/DashboardDataTable";
+import DashboardDataTable from "../../widgets/Dashboard/DataTable/Main/DashboardDataTable";
 const BusinessDashboardPage = () => {
   const { pathname } = useLocation();
   const BreadcrumbsItems = parseUrlForBreadcrumbs(pathname);

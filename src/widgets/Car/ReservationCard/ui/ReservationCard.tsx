@@ -2,9 +2,9 @@ import { FC } from "react";
 import CarCard, {
   ICarCardProps
 } from "../../../../entities/Car/CarCard/ui/CarCard";
-import ReservationDrawer from "../../../../features/Car/ReservationDrawer/ReservationDrawer";
 import { Button } from "../../../../shared/ui/Button";
 import styles from "./ReservationCard.module.scss";
+import { ReservationDrawer } from "../../../../features/Car/ReservationDrawer";
 
 interface IReservationCardProos extends ICarCardProps {}
 

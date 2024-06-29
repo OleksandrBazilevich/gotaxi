@@ -2,9 +2,9 @@ import React, { ChangeEvent, useState } from "react";
 import { MapIcon, SearchIcon } from "../../shared/assets/icons";
 import { Button } from "../../shared/ui/Button";
 import { Field } from "../../shared/ui/Field";
-import DashboardWrapper from "../../widgets/Dashboard/Wrapper/DashboardWrapper";
-import Scheduler from "../../widgets/Sсheduler/Sсheduler";
+import DashboardWrapper from "../../widgets/Dashboard/Wrapper/ui/DashboardWrapper";
 import styles from "./CalendarPage.module.scss";
+import { Scheduler } from "../../widgets/Sсheduler";
 
 export interface Event {
   car: {

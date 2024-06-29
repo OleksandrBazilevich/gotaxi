@@ -1,4 +1,4 @@
-import LoginForm from "../../widgets/Auth/LoginForm/LoginForm";
+import LoginForm from "../../widgets/Auth/LoginForm/ui/LoginForm";
 
 const LoginPage = () => {
   return (

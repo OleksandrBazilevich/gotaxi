@@ -3,8 +3,9 @@ import CarImage from "../../../../shared/assets/img/car.png";
 import CarImage2 from "../../../../shared/assets/img/car2.png";
 import CarImage3 from "../../../../shared/assets/img/car3.png";
 import { Button } from "../../../../shared/ui/Button";
+import { FC } from "react";
 
-const Banner = () => {
+const Banner:FC = () => {
   return (
     <div className={styles.banner}>
       <div className={styles.content}>

@@ -1,5 +1,4 @@
-
-import RegisterForm from "../../widgets/Auth/RegisterForm/RegisterForm";
+import { RegisterForm } from "../../widgets/Auth";
 
 const RegisterPage = () => {
   return (

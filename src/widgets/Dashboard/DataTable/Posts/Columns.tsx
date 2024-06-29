@@ -12,7 +12,7 @@ import {
 } from "../../../../shared/assets/icons";
 import { classNames } from "../../../../shared/lib";
 import { Button } from "../../../../shared/ui/Button";
-import { ICar } from "../Columns";
+import { ICar } from "../Main/Columns";
 
 type IStatus = "active" | "inactive";
 

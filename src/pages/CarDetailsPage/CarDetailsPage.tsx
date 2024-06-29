@@ -6,17 +6,15 @@ import styles from "./CarDetailsPage.module.scss";
 
 import CarImage from "../../shared/assets/img/galleryCar.png";
 import Avatar from "../../shared/ui/Avatar/Avatar";
-import FleetProfile from "../../entities/Fleet/ui/FleetProfile/FleetProfile";
 import Hr from "../../shared/ui/Hr/Hr";
 import CarCardInfo from "../../entities/Car/CarCard/ui/CarCardInfo";
-import CarInfo from "../../widgets/Car/ui/CarInfo/CarInfo";
 import Comment, {
   ICommentProps
 } from "../../entities/Comment/ui/Comment/Comment";
 import Comments from "../../entities/Comment/ui/Comments/Comments";
-import CarList from "../../widgets/Car/ui/CarList/CarList";
 import { ICarCardProps } from "../../entities/Car/CarCard/ui/CarCard";
 import useWindowDimensions from "../../shared/lib/useWindowDimensions";
+import { CarInfo, CarList } from "../../widgets/Car";
 
 const CarDetailsPage = () => {
   const { width } = useWindowDimensions();
